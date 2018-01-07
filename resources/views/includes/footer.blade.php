@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="page-footer primary-color-dark center-on-small-only pt-0">
+<footer class="page-footer primary-color-dark center-on-small-only pt-0" id="footer">
 
     <!--Footer Links-->
     <div class="container">

@@ -152,9 +152,9 @@
                                         <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">Blog Title</h4>
-                                        <h6 class="text-muted">By John Doe</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                        <h6 class="text-muted">By John Doe - 3 days ago</h6>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                     </div>
                                 </div>
                                 <!--Second review-->
@@ -163,9 +163,9 @@
                                         <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">Blog Title</h4>
-                                        <h6 class="text-muted">By Anna Casie</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                        <h6 class="text-muted">By Anna Casie - 3 days ago</h6>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                     </div>
                                 </div>
                                 <!--Second review-->
@@ -174,9 +174,9 @@
                                         <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">Blog Title</h4>
-                                        <h6 class="text-muted">By Dave Snow</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                        <h6 class="text-muted">By Dave Snow - 3 days ago</h6>
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                             <div class="col-sm-12">
                                 <h5 class="text-center mb-5">Upcoming Events</h5>
                                 <!--Card Narrower-->
-                                <div class="card card-cascade narrower">
+                                <div class="text-center card card-cascade narrower">
                                     <!--Card image-->
                                     <div class="view overlay hm-white-slight">
                                         <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" alt="">
