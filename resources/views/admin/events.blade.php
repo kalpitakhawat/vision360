@@ -44,7 +44,7 @@
 				<!--Panel-->
 				<div class="card">
 					<div class="card-header text-white">
-						<h3 class="float-left mt-3">Events</h3><a href="./events/addEvent" class="btn btn-warning float-right">Add Events</a>
+						<h3 class="float-left mt-3">Events</h3><a href="/admin/events/addEvent" class="btn btn-warning float-right">Add Events</a>
 					</div>
 					<div class="card-body">
 						<table id="example" class="table table-striped table-bordered table-responsive-md" cellspacing="0" width="100%">
