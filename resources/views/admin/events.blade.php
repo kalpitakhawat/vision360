@@ -54,8 +54,7 @@
 									<th>Time</th>
 									<th>Venue</th>
 									<th>Type</th>
-									<th>Edit</th>
-									<th>Delete</th>
+									<th>Actions</th>
 								</tr>
 							</thead>
 							<tfoot class="text-center">
@@ -64,19 +63,19 @@
 								<th>Time</th>
 								<th>Venue</th>
 								<th>Type</th>
-								<th>Edit</th>
-								<th>Delete</th>
+								<th>Actions</th>
 							</tr>
 							</tfoot>
 							<tbody>
+								@foreach ($events as $e)
 								<tr>
-									<td> </td>
-									<td> </td>
-									<td> </td>
-									<td> </td>
-									<td class="text-center"><a class="icons-sm blue-text"><i class="fa fa-pencil"></i></a></td>
-									<td class="text-center"><a class="icons-sm red-text"><i class="fa fa-trash"></i></a></td>
+									<td>{{$e->title}} </td>
+									<td>{{$e->time}} </td>
+									<td>{{$e->venue}} </td>
+									<td>{{$e->type}} </td>
+									<td class="text-center"><a class="icons-sm blue-text"><i class="fa fa-pencil"></i></a><a class="icons-sm red-text"><i class="fa fa-trash"></i></a></td>
 								</tr>
+								@endforeach
 							</tbody>
 						</table>
 					</div>

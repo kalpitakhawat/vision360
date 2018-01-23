@@ -15,24 +15,14 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="list-group">
-							<a href="/circulars/1" class="list-group-item list-group-item-action flex-column align-items-start">
+							@foreach ($circulars as $c)
+							<a href="/circulars/{{$c->id}}" class="list-group-item list-group-item-action flex-column align-items-start">
 								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">Circular title</h5>
-									<small class="text-muted">3 days ago</small>
+									<h5 class="mb-1">{{$c->title}}</h5>
+									<small class="text-muted">{{$c->created_at}}</small>
 								</div>
 							</a>
-							<a href="/circulars/1" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">Circular Title</h5>
-									<small class="text-muted">3 days ago</small>
-								</div>
-							</a>
-							<a href="/circulars/1" class="list-group-item list-group-item-action flex-column align-items-start">
-								<div class="d-flex w-100 justify-content-between">
-									<h5 class="mb-1">Circular Title</h5>
-									<small class="text-muted">3 days ago</small>
-								</div>
-							</a>
+							@endforeach
 						</div>
 					</div>
 				</div>

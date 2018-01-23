@@ -29,8 +29,8 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="md-form">
-										<textarea type="text" id="short-desc" name="short-desc" class="md-textarea" length="160" maxlength="160"></textarea>
-										<label for="short-desc">Short Description</label>
+										<textarea type="text" id="short_desc" name="short_desc" class="md-textarea" length="160" maxlength="160"></textarea>
+										<label for="short_desc">Short Description</label>
 									</div>
 								</div>
 							</div>
@@ -56,7 +56,7 @@
 								</div>
 								<div class="col-12 col-md-6 mt-2">
 									<select class="mdb-select">
-											
+										<option value="" selected="" disabled="">Select Event Type</option>
 										<option value="upcoming">Upcoming</option>
 										<option value="recent">Recent</option>
 									</select>

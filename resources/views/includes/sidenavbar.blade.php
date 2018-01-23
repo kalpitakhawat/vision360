@@ -34,8 +34,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="./admin/circulars" class=" waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Circulars</a></li>
-                        <li><a href="./admin/events" class="waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Events</a></li>
+                        <li><a href="./circulars" class=" waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Circulars</a></li>
+                        <li><a href="./events" class="waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Events</a></li>
                         <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Advertisements</a></li>
                     </ul>
                 </li>

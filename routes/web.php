@@ -18,18 +18,12 @@ Route::get('/home2', function () {
     return view('home');
 });
 
-Route::get('/events', function () {
-    return view('events');
-});
+Route::get('/events', "EventController@index");
 Route::get('/events/{id}', function () {
     return view('eventDetails');
 });
-Route::get('/circulars', function () {
-    return view('circulars');
-});
-Route::get('/circulars/{id}', function () {
-    return view('circularDetail');
-});
+Route::get('/circulars', 'CircularController@index');
+Route::get('/circulars/{id}','CircularController@detail' );
 Route::get('/blogs', function () {
     return view('blogs');
 });
@@ -57,15 +51,15 @@ Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('/admin/dashboard');
     });
+
     Route::prefix('events')->group(function () {
-        Route::get('/', function () {
-            return view('/admin/events');
-        });
+        Route::get('/', 'Admin\EventController@index');
         Route::get('/addEvent', function () {
             return view('/admin/addEvent');
         });
         Route::post('/doAdd','Admin\EventController@create');
     });
+
     Route::prefix('circulars')->group(function () {
         Route::get('/', 'Admin\CircularController@index');
         Route::get('/addCircular', function () {
