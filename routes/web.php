@@ -65,6 +65,13 @@ Route::prefix('admin')->group(function () {
         });
         Route::post('/doAdd','Admin\EventController@create');
     });
+    Route::prefix('circulars')->group(function () {
+        Route::get('/', 'Admin\CircularController@index');
+        Route::get('/addCircular', function () {
+            return view('/admin/addCircular');
+        });
+        Route::post('/doAdd','Admin\CircularController@create');
+    });
     
 });
 
