@@ -29,15 +29,20 @@
                         <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="#">Contact Us</a>
                         </li>
+                        @if(Auth::check())
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-                                <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-                                <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+                                <a class="dropdown-item waves-effect waves-light" href="#">My Profile</a>
+                                <a class="dropdown-item waves-effect waves-light" href="#">Logout</a>
                             </div>
                         </li>
+                        @else
+                         <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="login">Sign In / Sign Up</a>
+                        </li>
+                        @endif
                     </ul>
                 </div>
             </nav>

@@ -19,7 +19,6 @@ class EventController extends Controller
     	//dd($cover_image);    	
         $e = new Event;
         $e->title = $r->input('title');
-        $e->short_desc = $r->input('short_desc');
         $e->desc = $r->input('description');
         $e->cover_image = $cover_image;
         $e->type = $r->input('type');

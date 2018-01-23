@@ -12,23 +12,26 @@
 					<!--Section heading-->
 					<h3 class="font-bold h3">Write A New Blog</h3>
 				</section>
-				<div class="row mt-4">
-					<div class="col-12 col-md-8 offset-md-2">
-						<div class="md-form">
-							<input type="text" id="form1" class="form-control" autofocus="">
-							<label for="form1" class="">Blog Title</label>
-						</div>
-						<div class="md-form">
-							<textarea id="textarea-char-counter" class="md-textarea" length="160"></textarea>
-							<label for="textarea-char-counter">Short Description</label>
-						</div>
+				<form method="post" action="doAdd">
+					{{csrf_field()}}
+					<div class="row mt-4">
+						<div class="col-12 col-md-8 offset-md-2">
+							<div class="md-form">
+								<input type="text" id="form1" name="title" class="form-control" autofocus="">
+								<label for="form1" class="">Blog Title</label>
+							</div>
+							<div class="md-form">
+								<textarea id="textarea-char-counter" name="short_desc" class="md-textarea" length="160"></textarea>
+								<label for="textarea-char-counter">Short Description</label>
+							</div>
 							<label class="mb-2">Content</label>
-						<div class="md-form">
-							<textarea id="textarea-description"></textarea>
+							<div class="md-form">
+								<textarea id="textarea-description" name="desc"></textarea>
+							</div>
+							<button type="submit" class="btn btn-success">Publish</button>
 						</div>
-						<button type="button" class="btn btn-success">Publish</button>
 					</div>
-				</div>
+				</form>
 				
 			</div>
 		</main>

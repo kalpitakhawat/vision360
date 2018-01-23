@@ -33,7 +33,6 @@
 									<!--Title-->
 									<h4 class="card-title">{{$ue->title}} </h4>
 									<!--Text-->
-									<p class="card-text">{{$ue->short_desc}} </p>
 									<a class="btn btn-unique" href="./events/{{$ue->id}}">View Details</a>
 								</div>
 								<!--/.Card content-->
@@ -70,7 +69,6 @@
 									<!--Title-->
 									<h4 class="card-title">{{$re->title}} </h4>
 									<!--Text-->
-									<p class="card-text">{{$re->short_desc}} </p>
 									<a class="btn btn-unique" href="./events/{{$re->id}}">View Details</a>
 								</div>
 								<!--/.Card content-->

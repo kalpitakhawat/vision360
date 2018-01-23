@@ -30,15 +30,14 @@ Route::get('/blogs', function () {
 Route::get('/blogs/write', function () {
     return view('addblog');
 });
+Route::post('/blogs/doAdd', 'BlogController@create');
 Route::get('/blogs/{id}', function () {
     return view('blogDetail');
 });
 Route::get('/members', function () {
     return view('members');
 });
-Route::get('/members/{id}', function () {
-    return view('memberDetail');
-});
+Route::get('/members/{id}', 'MemberController@index');
 
 Route::get('/register/second', 'Auth\RegisterController@secondForm');
 Route::post('/register/second', 'Auth\RegisterController@secondEntry');

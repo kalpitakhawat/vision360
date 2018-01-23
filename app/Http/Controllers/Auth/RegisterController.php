@@ -27,7 +27,7 @@ class RegisterController extends Controller
         $user->status = 'register';
         $user->save();
         Auth::login($user);
-        return redirect('/');
+        return redirect('/register/second');
     }
 
     public function secondForm(Request $r)
