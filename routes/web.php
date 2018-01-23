@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home2', function () {
+    return view('home');
+});
+
 Route::get('/events', function () {
     return view('events');
 });
@@ -48,4 +52,22 @@ Route::post('/register/donate', 'Auth\RegisterController@donate');
 Route::get('/register/pending', 'Auth\RegisterController@pending');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('/admin/dashboard');
+    });
+    Route::prefix('events')->group(function () {
+        Route::get('/', function () {
+            return view('/admin/events');
+        });
+        Route::get('/addEvent', function () {
+            return view('/admin/addEvent');
+        });
+        Route::post('/doAdd','Admin\EventController@create');
+    });
+    
+});
+
+
+
+

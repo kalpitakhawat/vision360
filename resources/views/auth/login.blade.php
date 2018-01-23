@@ -29,22 +29,23 @@
                                     <h3 class="dark-grey-text mb-5"><strong>Sign in</strong></h3>
                                 </div>
                                 <!--Body-->
-                                <form>
+                                <form method="post" action="./login">
+                                    {{csrf_field()}}
                                     <div class="md-form">
-                                    <input type="email" id="Form-email1" class="form-control" value="{{ old('email') }}" required="" autofocus>
+                                    <input type="email" id="Form-email1" name="email" class="form-control" value="{{ old('email') }}" required="" autofocus>
                                     <label for="Form-email1">Your email</label>
                                     @if ($errors->has('email'))
                                     <span class="help-block">
-                                        <p class="text-red">{{ $errors->first('email') }}</p>
+                                        <p class="red-text">{{ $errors->first('email') }}</p>
                                     </span>
                                 @endif
                                 </div>
                                 <div class="md-form">
-                                    <input type="password" id="Form-pass1" class="form-control" required="">
+                                    <input type="password" id="Form-pass1" name="password" class="form-control" required="">
                                     <label for="Form-pass1">Your password</label>
                                      @if ($errors->has('password'))
                                     <span class="help-block">
-                                        <p class="text-red">{{ $errors->first('password') }}</p>
+                                        <p class="red-text">{{ $errors->first('password') }}</p>
                                     </span>
                                 @endif
                                     <p class="font-small blue-text d-flex justify-content-end"> <a href="/password/reset" class="blue-text ml-1">Forgot Password?</a></p>

@@ -1,8 +1,7 @@
 <header>
-  <nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color">
+  <nav class="navbar navbar-expand-lg navbar-dark blue-gradient">
                 <a class="navbar-brand" href="#">
                   <img src="/img/vision_360.png" height="70px;" alt="">
-                  Vision 360
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

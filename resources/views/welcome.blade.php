@@ -10,16 +10,84 @@
         <main>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 p-0 mt-0">
-                        <section>
-                            <!--Section heading-->
-                            <h2 class="text-center h1 py-5">
-                            <strong>What Is Vision 360 .... ?</strong>
-                            </h2>
-                            <!--Section description-->
-                            <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 py-3 mt-0">
+                                <section>
+                                    
+                                    <!--Section heading-->
+                                    <h1 class="py-5 font-bold text-center">Our Goals</h1>
+                                    <!--Section description-->
+                                    <!--  <p class="px-5 mb-5 pb-3 lead grey-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam.</p> -->
+                                    <!--Grid row-->
+                                    <div class="row">
+                                        <!--Grid column-->
+                                        <div class="col-md-4">
+                                            <!--Grid row-->
+                                            <div class="row mb-2 wow fadeInLeft" data-wow-delay="0.2s">
+                                                <div class="col-2 ">
+                                                    <i class="fa fa-2x fa-handshake-o blue-text"></i>
+                                                </div>
+                                                <div class="col-10 text-left">
+                                                    <h5 class="font-bold">Networking</h5>
+                                                    <p class="grey-text">Business Networking For Kutchi Jain Community Of Gujarat</p>
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+                                            <!--Grid row-->
+                                            <div class="row mb-2 wow fadeInLeft" data-wow-delay="0.6s">
+                                                <div class="col-2">
+                                                    <i class="fa fa-2x fa-level-up blue-text"></i>
+                                                </div>
+                                                <div class="col-10 text-left">
+                                                    <h5 class="font-bold">Development</h5>
+                                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                                    deleniti hic.</p>
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+                                        </div>
+                                        <!--Grid column-->
+                                        <!--Grid column-->
+                                        <div class="col-md-4 mb-2 hide-on-small-only flex-center">
+                                            <img src="/img/vision_360.png" height="200px" alt="" class="mt-3 z-depth-0 wow fadeInUp">
+                                        </div>
+                                        <!--Grid column-->
+                                        <!--Grid column-->
+                                        <div class="col-md-4">
+                                            <!--Grid row-->
+                                            <div class="row mb-2 wow fadeInRight" data-wow-delay="0.2s">
+                                                <div class="col-2">
+                                                    <i class="fa fa-2x fa-heart blue-text"></i>
+                                                </div>
+                                                <div class="col-10 text-left">
+                                                    <h5 class="font-bold">Beloved</h5>
+                                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                                    deleniti hic.</p>
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+                                            <!--Grid row-->
+                                            <div class="row mb-2 wow fadeInRight" data-wow-delay="0.6s">
+                                                <div class="col-2">
+                                                    <i class="fa fa-2x fa-users blue-text"></i>
+                                                </div>
+                                                <div class="col-10 text-left">
+                                                    <h5 class="font-bold">Support</h5>
+                                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                                    deleniti hic.</p>
+                                                </div>
+                                            </div>
+                                            <!--Grid row-->
+                                        </div>
+                                        <!--Grid column-->
+                                    </div>
+                                    <!--Grid row-->
+                                </section>
+                                <!--/Section: Features v.4-->
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container">
@@ -42,7 +110,7 @@
                                     <!--Section heading-->
                                     <h2 class="h1 text-center py-5">Today's Highlighted Profiles</h2>
                                     <!--Section description-->
-                                    <p class="section-description">We Show Four New Profiles on Our Home Page on the First Come First Bases</p>
+                                    <p class="section-description blue-text">We Show Four New Profiles on Our Home Page on the First Come First Bases</p>
                                     <!--Grid row-->
                                     <div class="row mb-lg-4 center-on-small-only">
                                         <!--Grid column-->
@@ -56,8 +124,8 @@
                                                 <h4>
                                                 <strong>John Doe</strong>
                                                 </h4>
-                                                <h6 class="font-bold grey-text mb-4">Web Designer</h6>
-                                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                <h6 class="font-bold  mb-4">Web Designer</h6>
+                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
                                                 <!--Facebook-->
                                                 <a class="icons-sm fb-ic">
                                                     <i class="fa fa-info"></i> View Details
@@ -76,8 +144,8 @@
                                                 <h4>
                                                 <strong>Maria Kate</strong>
                                                 </h4>
-                                                <h6 class="font-bold grey-text mb-4">Photographer</h6>
-                                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                <h6 class="font-bold  mb-4">Photographer</h6>
+                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
                                                 <!--Facebook-->
                                                 <a class="icons-sm fb-ic">
                                                     <i class="fa fa-info"></i> View Details
@@ -100,8 +168,8 @@
                                                 <h4>
                                                 <strong>Anna Deynah</strong>
                                                 </h4>
-                                                <h6 class="font-bold grey-text mb-4">Web Developer</h6>
-                                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                <h6 class="font-bold  mb-4">Web Developer</h6>
+                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
                                                 <!--Facebook-->
                                                 <a class="icons-sm fb-ic">
                                                     <i class="fa fa-info"></i> View Details
@@ -120,8 +188,8 @@
                                                 <h4>
                                                 <strong>Sarah Melyah</strong>
                                                 </h4>
-                                                <h6 class="font-bold grey-text mb-4">Front-end Developer</h6>
-                                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                <h6 class="font-bold  mb-4">Front-end Developer</h6>
+                                                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
                                                 <!--Google +-->
                                                 <a class="icons-sm fb-ic">
                                                     <i class="fa fa-info"></i> View Details
@@ -186,7 +254,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <h5 class="text-center">Latest Circulars</h5>
-                                <div class="list-group">
+                                <div class="list-group transparent">
                                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="d-flex w-100 justify-content-between">
                                             <small>Donec id elit non mi porta.</small>
@@ -210,7 +278,13 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <div class="row my-3">
+                            <div class="col-12">
+                                <h5 class="text-center text-muted">Advertisement</h5>
+                                <img src="./img/add1.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                        <div class="row mt-5">
                             <div class="col-sm-12">
                                 <h5 class="text-center mb-5">Upcoming Events</h5>
                                 <!--Card Narrower-->
@@ -238,17 +312,15 @@
                                 <hr>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-12">
-                                <h5 class="text-center text-muted">Advertisement</h5>
-                                <img src="./img/add1.jpg" class="img-fluid" alt="Responsive image">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </main>
         @include('./includes/footer')
         @include('./includes/scripts')
+        <script type="text/javascript">
+        new WOW().init();
+        </script>
     </body>
 </html>
