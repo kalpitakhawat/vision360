@@ -45,6 +45,7 @@ Route::get('/members', function () {
 Route::get('/members/{id}', function () {
     return view('memberDetail');
 });
+
 Route::get('/register/second', 'Auth\RegisterController@secondForm');
 Route::post('/register/second', 'Auth\RegisterController@secondEntry');
 Route::get('/register/donation', 'Auth\RegisterController@donationForm');
