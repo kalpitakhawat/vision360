@@ -1,6 +1,6 @@
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark info-color fixed-top top-nav-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top top-nav-collapse white black-text">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="/img/vision_360.png" height="70px;" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
