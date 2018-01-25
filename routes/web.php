@@ -46,17 +46,20 @@ Route::post('/register/donate', 'Auth\RegisterController@donate');
 Route::get('/register/pending', 'Auth\RegisterController@pending');
 Auth::routes();
 
+Route::get('/user/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('/admin/dashboard');
     });
+    Route::get('/', 'Admin\@index');
+    Route::get('/pending','Admin\adminRootController@index');
 
     Route::prefix('events')->group(function () {
         Route::get('/', 'Admin\EventController@index');
         Route::get('/addEvent', function () {
             return view('/admin/addEvent');
         });
-        Route::post('/doAdd','Admin\EventController@create');
+        
     });
 
     Route::prefix('circulars')->group(function () {
