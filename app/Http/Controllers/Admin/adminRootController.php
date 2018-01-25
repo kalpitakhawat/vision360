@@ -16,6 +16,11 @@ class adminRootController extends Controller
     }
     public function pendingUserDetails($uid)
     {
-    	User::where("id",$uid)->first();	
+    	$user = User::where("id",$uid)
+    					->first();
+    	if( $user ){
+    		die("Yes");
+    	}
+    	die(" No");
     }
 }
