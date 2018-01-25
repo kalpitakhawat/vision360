@@ -29,28 +29,33 @@
 								</h4>
 								<hr>
 								@if( $user->status == 'applied' || $user->status=='rejected' )
-									<form method="post" action="/admin/user/approve/">
+									<form method="post" action="/admin/user/approved/">
 										{{csrf_field()}}
+										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
 									</form>
-									<form method="post" action="/admin/user/reject/">
+									<form method="post" action="/admin/user/rejected/">
 										{{csrf_field()}}
+										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-danger">Reject<i class="fa fa-"></i> </button>
 									</form>
 								@elseIf( $user->status == 'rejected')
-										<form method="post" action="/admin/user/approve/">
+										<form method="post" action="/admin/user/approved/">
 										{{csrf_field()}}
+										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
 									</form>
 								@else
 									@if( $user->status == 'blocked' )
 									<form method="post" action="/admin/user/block/">
 										{{csrf_field()}}
+										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Unblock <i class="fa fa-"></i> </button>
 									</form>
 									@else
 									<form method="post" action="/admin/user/unblock/">
 										{{csrf_field()}}
+										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-danger">Block<i class="fa fa-"></i> </button>
 									</form>
 									@endif
