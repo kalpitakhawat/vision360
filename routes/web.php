@@ -57,7 +57,6 @@ Route::prefix('admin')->group(function () {
         Route::get('/addEvent', function () {
             return view('/admin/addEvent');
         });
-        
     });
 
     Route::prefix('circulars')->group(function () {
