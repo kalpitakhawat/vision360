@@ -28,7 +28,21 @@ class BlogController extends Controller
     }
     public function pendingBlogDetails(Request $r,$bid)
     {
-    	
+    	$blog = Blog::where('id',$bid)->first();
+    	$u= User::where('id',$blog->user_id)->first();
+    	return view('admin/pendingBlogs')->with('blog',$blog)->with('user' ,$u);
+    }
+    public function approve(Request $r)
+    {
+    	$blog = Blog::where('id',$r->id)->first();
+    	$blog->status = "Active";
+    	$blog->update();
+    }
+    public function reject(Request $r)
+    {
+    	$blog = Blog::where('id',$r->id)->first();
+    	$blog->status = "rejected";
+    	$blog->update();
     }
 
 }

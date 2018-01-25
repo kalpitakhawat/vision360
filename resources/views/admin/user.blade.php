@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title> Pending Users</title>
 		@include('../includes/headers')
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
 		<style type="text/css">
@@ -44,57 +44,57 @@
 				<!--Panel-->
 				<div class="card">
 					<div class="card-header text-white">
-						<h3 class="float-left mt-3">Pending Blog</h3>
+						<h3 class="float-left mt-3">Events</h3><a href="/admin/events/addEvent" class="btn btn-warning float-right">Add Events</a>
 					</div>
 					<div class="card-body">
 						<table id="example" class="table table-striped table-bordered table-responsive-md" cellspacing="0" width="100%">
 							<thead class="text-center">
 								<tr>
-									<th>Title</th>
-									<th>Author</th>
-									<th>Short Description</th>
-									<th>Posted At</th>
+									<th>FirstName</th>
+									<th>LastNAme</th>
+									<th>Email</th>
+									<th>Sub Cast</th>
 									<th>Action</th>
 								</tr>
 							</thead>
 							<tfoot class="text-center">
 							<tr>
-								<th>Title</th>
-								<th>Author</th>
-								<th>Short Description</th>
-								<th>Posted At</th>
+								<th>FirstName</th>
+								<th>LastNAme</th>
+								<th>Email</th>
+								<th>Sub Cast</th>
 								<th>Action</th>
 							</tr>
 							</tfoot>
 							<tbody>
-								@foreach ($blogs as $blog)
+								@foreach ($users as $e)
 								<tr>
-									<td>{{$blog->title}} </td>
-									<td>{{$blog->user_name}} </td>
-									<td>{{$blog->short_desc}} </td>
-									<td>{{$blog->created_at}} </td>
-									<td> 
-									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/user/preview/{{ $blog->id }}"> View </a></td>
-								</tr>
-								@endforeach
-							</tbody>
-						</table>
+									<td>{{$e->f_name}} </td>
+									<td>{{$e->l_name}} </td>
+									<td>{{$e->email}} </td>
+									<td>{{$e->sub_cast}} </td>
+									<td>
+										<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/user/preview/{{ $e->id }}"> View </a></td>
+									</tr>
+									@endforeach
+								</tbody>
+							</table>
+						</div>
 					</div>
+					<!--/.Panel-->
 				</div>
-				<!--/.Panel-->
-			</div>
-		</main>
-		@include('./includes/scripts')
-		<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-		<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
-		<script type="text/javascript">
+			</main>
+			@include('./includes/scripts')
+			<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+			<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+			<script type="text/javascript">
+				
+			$(document).ready(function() {
+			$('#example').DataTable();
+			$('select').addClass('mdb-select');
+			$('.mdb-select').material_select();
+			});
 			
-		$(document).ready(function() {
-		$('#example').DataTable();
-		$('select').addClass('mdb-select');
-		$('.mdb-select').material_select();
-		});
-		
-		</script>
-	</body>
-</html>
+			</script>
+		</body>
+	</html>

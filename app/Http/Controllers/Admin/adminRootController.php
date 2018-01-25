@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 class adminRootController extends Controller
 {
-    public function index()
+    public function pendingIndex()
     {
     	//return view('admin/pendingUsers');
     	$e = User::where("status","applied")->get();

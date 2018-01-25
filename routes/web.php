@@ -51,7 +51,6 @@ Route::prefix('admin')->group(function () {
         return view('/admin/dashboard');
     });
     Route::get('/', 'Admin\@index');
-    Route::get('/pending','Admin\adminRootController@index');
 
     Route::prefix('events')->group(function () {
         Route::get('/', 'Admin\EventController@index');
@@ -72,12 +71,15 @@ Route::prefix('admin')->group(function () {
     Route::prefix('blogs')->group(function () {
         Route::get('/', 'Admin\BlogController@index');
         Route::get('/pendingblog', 'Admin\BlogController@pendingIndex');
-        Route::get('/preview/{bid}', 'Admin\adminRootController@pendingBlogDetails');
-        Route::post('/doAdd','Admin\CircularController@create');
+        Route::get('/preview/{bid}', 'Admin\BloController@pendingBlogDetails');
+        Route::post('/approve','Admin\BlogController@approve');
+        Route::post('/reject','Admin\BlogController@reject');
     });
 
     Route::prefix('user')->group(function () {
         Route::get('/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
+        Route::get('/pending','Admin\adminRootController@pendingIndex');
+
     });
 });
 
