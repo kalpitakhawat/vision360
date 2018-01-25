@@ -66,7 +66,15 @@ Route::prefix('admin')->group(function () {
         });
         Route::post('/doAdd','Admin\CircularController@create');
     });
-    
+
+    Route::prefix('blogs')->group(function () {
+        Route::get('/', 'Admin\BlogController@index');
+        Route::get('/pendingblog', 'Admin\BlogController@pendingIndex');
+        Route::get('/addCircular', function () {
+            return view('/admin/addCircular');
+        });
+        Route::post('/doAdd','Admin\CircularController@create');
+    });
 });
 
 
