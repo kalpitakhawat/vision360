@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark blue-gradient">
+  <nav class="navbar navbar-expand-lg navbar-dark blue-gradient" style="background: linear-gradient(40deg,#fff,#45cafc,#303f9f) !important;">
                 <a class="navbar-brand" href="#">
                   <img src="/img/vision_360.png" height="70px;" alt="">
                 </a>
