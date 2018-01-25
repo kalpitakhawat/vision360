@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Redirect;
 use App\Blog;
 use App\User;
 class BlogController extends Controller
@@ -29,8 +30,11 @@ class BlogController extends Controller
     public function pendingBlogDetails(Request $r,$bid)
     {
     	$blog = Blog::where('id',$bid)->first();
-    	$u= User::where('id',$blog->user_id)->first();
-    	return view('admin/pendingBlogs')->with('blog',$blog)->with('user' ,$u);
+        if( $user ){
+    	   $u= User::where('id',$blog->user_id)->first();
+    	   return view('admin/pendingBlogs')->with('blog',$blog)->with('user' ,$u);
+        }
+        return Redirect::back();
     }
     public function approve(Request $r)
     {

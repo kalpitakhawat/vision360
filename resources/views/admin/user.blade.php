@@ -74,7 +74,7 @@
 									<td>{{$e->email}} </td>
 									<td>{{$e->sub_cast}} </td>
 									<td>
-										<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/user/preview/{{ $e->id }}"> View </a></td>
+										<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/user/preview/{{ $e->id }}"> View </a></td>
 									</tr>
 									@endforeach
 								</tbody>

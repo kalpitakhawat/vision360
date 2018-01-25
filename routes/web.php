@@ -50,7 +50,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('/admin/dashboard');
     });
-    Route::get('/', 'Admin\@index');
 
     Route::prefix('events')->group(function () {
         Route::get('/', 'Admin\EventController@index');
@@ -78,6 +77,7 @@ Route::prefix('admin')->group(function () {
     Route::prefix('user')->group(function () {
         Route::get('/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
         Route::get('/pending','Admin\adminRootController@pendingIndex');
+        Route::get('/','Admin\adminRootController@index');
 
     });
 });

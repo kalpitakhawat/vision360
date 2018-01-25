@@ -24,4 +24,11 @@ class adminRootController extends Controller
     	}
     	return Redirect::back();
     }
+     public function index()
+    {
+        //return view('admin/pendingUsers');
+        $e = User::all();
+        //dd($users);
+        return view("/admin/user")->with('users',$e);
+    }
 }
