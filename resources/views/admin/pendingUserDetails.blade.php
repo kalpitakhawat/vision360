@@ -28,9 +28,35 @@
 								<!-- <p class="dark-grey-text">{{$user->edu_qualification}}</p> -->
 								</h4>
 								<hr>
-								<button class="btn btn-success">Approve <i class="fa fa-correct"></i> </button>
-								<button class="btn btn-danger">Reject<i class="fa fa-cross"></i> </button>
-								<!--Quotation-->
+								@if( $user->status == 'applied' || $user->status=='rejected' )
+									<form method="post" action="/admin/user/approve/">
+										{{csrf_field()}}
+										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
+									</form>
+									<form method="post" action="/admin/user/approve/">
+										{{csrf_field()}}
+										<button class="btn btn-danger">Reject<i class="fa fa-"></i> </button>
+									</form>
+								@elseIf( $user->status == 'rejected')
+										<form method="post" action="/admin/user/approve/">
+										{{csrf_field()}}
+										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
+									</form>
+								@else
+									@if( $user->status == 'blocked' )
+									<form method="post" action="/admin/user/block/">
+										{{csrf_field()}}
+										<button class="btn btn-success">Unblock <i class="fa fa-"></i> </button>
+									</form>
+									@else
+									<form method="post" action="/admin/user/unblock/">
+										{{csrf_field()}}
+										<button class="btn btn-danger">Block<i class="fa fa-"></i> </button>
+									</form>
+									@endif
+								@endif
+
+																<!--Quotation-->
 								<!-- <p class="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p> -->
 								<hr>
 								<div class="row justify-content-center">
