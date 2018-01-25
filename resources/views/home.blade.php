@@ -207,54 +207,6 @@
 
         <!--/Fourth container-->
         <div class="container">
-
-            <!--Section: Pricing v.3-->
-            <section class="section mt-4 mb-5">
-               <div class="row">
-                                <div class="col-sm-12">
-                                    <h2 class="h1 text-center py-5">Recent Blogs</h2>
-                                    <!--First review-->
-                                    <div class="media mb-1">
-                                        <a class="media-left waves-light">
-                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
-                                        </a>
-                                        <div class="media-body">
-                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                            <h6 class="text-muted">By John Doe - 3 days ago</h6>
-                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                        </div>
-                                    </div>
-                                    <!--Second review-->
-                                    <div class="media mb-1">
-                                        <a class="media-left waves-light">
-                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
-                                        </a>
-                                        <div class="media-body">
-                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                            <h6 class="text-muted">By Anna Casie - 3 days ago</h6>
-                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                        </div>
-                                    </div>
-                                    <!--Second review-->
-                                    <div class="media mb-1">
-                                        <a class="media-left waves-light">
-                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
-                                        </a>
-                                        <div class="media-body">
-                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                            <h6 class="text-muted">By Dave Snow - 3 days ago</h6>
-                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-            </section>
-            <!--/Section: Pricing v.3-->
-
-            <hr>
-
-
             <!--Section: Testimonials v.4-->
             <section class="section text-center pb-4">
 
@@ -409,7 +361,51 @@
 
         </div>
         <!--/Fourth container-->
+        <div class="container">
+              <!--Section: Pricing v.3-->
+            <section class="section mt-4 mb-5">
+               <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="h1 text-center py-5">Recent Blogs</h2>
+                                    <!--First review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By John Doe - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        </div>
+                                    </div>
+                                    <!--Second review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By Anna Casie - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        </div>
+                                    </div>
+                                    <!--Second review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By Dave Snow - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+            </section>
+            <!--/Section: Pricing v.3-->
+        </div>
     </main>
     <!--Main content-->
 
