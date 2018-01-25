@@ -73,7 +73,8 @@
 									<td>{{$blog->user_name}} </td>
 									<td>{{$blog->short_desc}} </td>
 									<td>{{$blog->created_at}} </td>
-									<td></td>
+									<td> 
+									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/user/preview/{{ $blog->id }}"> View </a></td>
 								</tr>
 								@endforeach
 							</tbody>

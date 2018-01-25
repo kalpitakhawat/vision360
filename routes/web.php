@@ -46,7 +46,6 @@ Route::post('/register/donate', 'Auth\RegisterController@donate');
 Route::get('/register/pending', 'Auth\RegisterController@pending');
 Auth::routes();
 
-Route::get('/user/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('/admin/dashboard');
@@ -77,6 +76,10 @@ Route::prefix('admin')->group(function () {
             return view('/admin/addCircular');
         });
         Route::post('/doAdd','Admin\CircularController@create');
+    });
+
+    Route::prefix('user')->group(function () {
+        Route::get('/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
     });
 });
 
