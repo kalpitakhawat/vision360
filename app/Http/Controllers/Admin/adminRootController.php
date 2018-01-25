@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Redirect;
 use App\User;
 class adminRootController extends Controller
 {
@@ -19,8 +20,8 @@ class adminRootController extends Controller
     	$user = User::where("id",$uid)
     					->first();
     	if( $user ){
-    		die("Yes");
+			return view('admin.pendingUserDetails')->with('user', $user);    		
     	}
-    	die(" No");
+    	return Redirect::back();
     }
 }
