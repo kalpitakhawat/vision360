@@ -26,5 +26,9 @@ class BlogController extends Controller
     	}
     	return view('admin/blogs')->with('blogs',$blogs);
     }
-    
+    public function pendingBlogDetails(Request $r,$bid)
+    {
+    	
+    }
+
 }

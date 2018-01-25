@@ -72,9 +72,7 @@ Route::prefix('admin')->group(function () {
     Route::prefix('blogs')->group(function () {
         Route::get('/', 'Admin\BlogController@index');
         Route::get('/pendingblog', 'Admin\BlogController@pendingIndex');
-        Route::get('/addCircular', function () {
-            return view('/admin/addCircular');
-        });
+        Route::get('/preview/{bid}', 'Admin\adminRootController@pendingBlogDetails');
         Route::post('/doAdd','Admin\CircularController@create');
     });
 
