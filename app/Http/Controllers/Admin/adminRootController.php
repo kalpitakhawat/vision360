@@ -13,7 +13,7 @@ class adminRootController extends Controller
     	//return view('admin/pendingUsers');
     	$e = User::where("status","applied")->get();
     	//dd($users);
-    	return view("/admin/pendingUsers")->with('users',$e);
+    	return view("/admin/user/pendingUsers")->with('users',$e);
     }
     public function pendingUserDetails($uid)
     {
