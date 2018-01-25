@@ -87,112 +87,9 @@
     <!--Main content-->
     <main>
 
-        <!--First container-->
-        <div class="container">
+       
 
-            <!--Section: Features v.1-->
-            <section id="features" class="section feature-box mb-5">
-
-                <!--Section heading-->
-                <h1 class="mb-3 my-5 pt-5 dark-grey-text wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Lorem ipsum</strong> dolor sit amet</h1>
-
-                <!--Section description-->
-                <p class="section-description wow fadeIn" data-wow-delay="0.2s">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis
-                    ad voluptas, animi obcaecati adipisci sapiente mollitia.</p>
-
-                <!--First row-->
-                <div class="row features wow fadeIn" data-wow-delay="0.2s">
-
-                    <div class="col-lg-4 text-center">
-                        <div class="icon-area">
-                            <div class="circle-icon">
-                                <i class="fa fa-gears blue-text"></i>
-                            </div>
-                            <br>
-                            <h5 class="dark-grey-text font-bold mt-2">Customization</h5>
-                            <div class="mt-1">
-                                <p class="mx-3 grey-text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 text-center">
-                        <div class="icon-area">
-                            <div class="circle-icon">
-                                <i class="fa fa-book blue-text"></i>
-                            </div>
-                            <br>
-                            <h5 class="dark-grey-text font-bold mt-2">Easy tutorials</h5>
-                            <div class="mt-1">
-                                <p class="mx-3 grey-text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 text-center mb-4">
-                        <div class="icon-area">
-                            <div class="circle-icon">
-                                <i class="fa fa-users blue-text"></i>
-                            </div>
-                            <br>
-                            <h5 class="dark-grey-text font-bold mt-2">Free support</h5>
-                            <div class="mt-1">
-                                <p class="mx-3 grey-text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/First row-->
-
-            </section>
-            <!--/Section: Features v.1-->
-
-        </div>
-        <!--First container-->
-
-        <!--Second container-->
-        <div class="container-fluid" style="background-color: #f9f9f9">
-            <div class="container py-4">
-
-                <!--Section: Download-->
-                <section>
-
-                    <!-- First row -->
-                    <div class="row my-4 pt-5 wow fadeIn" data-wow-delay="0.4s">
-
-                        <!-- First column -->
-                        <div class="col-lg-7 col-md-12 mb-r text-center">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/screen.jpg" alt="" class="img-fluid z-depth-2 rounded">
-                        </div>
-                        <!-- /First column -->
-
-                        <!-- Second column -->
-                        <div class="col-lg-5 col-md-12 mb-r text-left">
-
-                            <!--Section heading-->
-                            <h2 class="mb-3 my-5 dark-grey-text wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Download</strong> the application</h2>
-
-                            <p class="grey-text mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit.</p>
-                            <a class="btn btn-white btn-rounded blue-text font-bold ml-0 wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-android pr-2" aria-hidden="true"></i> Play store</a>
-                            <a class="btn btn-white btn-rounded blue-text font-bold wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-apple pr-2" aria-hidden="true"></i> App store</a>
-                        </div>
-                        <!-- /.Second column -->
-
-                    </div>
-                    <!-- /.First row -->
-
-                </section>
-                <!--/Section: Download-->
-
-            </div>
-        </div>
-        <!--Second container-->
+      
 
         <!--Third container-->
         <div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg')">
@@ -313,103 +210,44 @@
 
             <!--Section: Pricing v.3-->
             <section class="section mt-4 mb-5">
-
-                <!--Section heading-->
-                <h1 class="mb-3 my-5 pt-5 text-center dark-grey-text wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Lorem ipsum</strong> dolor sit amet</h1>
-
-                <!--Section description-->
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate
-                    esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
-
-                <!--First row-->
-                <div class="row">
-
-                    <!--First column-->
-                    <div class="col-lg-4 col-md-12 mb-r">
-                        <!--Card-->
-                        <div class="card">
-
-                            <!--Content-->
-                            <div class="text-center">
-                                <div class="card-body">
-                                    <h5>Basic plan</h5>
-                                    <div class="flex-center">
-                                        <div class="card-circle">
-                                            <i class="fa fa-home blue-text"></i>
+               <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="h1 text-center py-5">Recent Blogs</h2>
+                                    <!--First review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By John Doe - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                         </div>
                                     </div>
-
-                                    <!--Price-->
-                                    <h2 class="font-bold dark-grey-text"><strong>59$</strong></h2>
-                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id nobis accusamus
-                                        deleniti cumque hic laborum.</p>
-                                    <a class="btn btn-blue font-bold btn-rounded">Buy now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--/.Card-->
-                    </div>
-                    <!--/First column-->
-
-                    <!--Second column-->
-                    <div class="col-lg-4 col-md-12 mb-r">
-                        <!--Card-->
-                        <div class="card blue-gradient">
-
-                            <!--Content-->
-                            <div class="text-center white-text">
-                                <div class="card-body">
-                                    <h5>Premium plan</h5>
-                                    <div class="flex-center">
-                                        <div class="card-circle">
-                                            <i class="fa fa-group white-text"></i>
+                                    <!--Second review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By Anna Casie - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                         </div>
                                     </div>
-
-                                    <!--Price-->
-                                    <h2 class="font-bold white-text"><strong>79$</strong></h2>
-                                    <p>Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio
-                                        cupiditate sequi atque.</p>
-                                    <a class="btn btn-white font-bold btn-rounded">Buy now</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--/.Card-->
-                    </div>
-                    <!--/Second column-->
-
-                    <!--Third column-->
-                    <div class="col-lg-4 col-md-12 mb-r">
-                        <!--Card-->
-                        <div class="card">
-
-                            <!--Content-->
-                            <div class="text-center">
-                                <div class="card-body">
-                                    <h5>Advanced plan</h5>
-                                    <div class="flex-center">
-                                        <div class="card-circle">
-                                            <i class="fa fa-bar-chart blue-text"></i>
+                                    <!--Second review-->
+                                    <div class="media mb-1">
+                                        <a class="media-left waves-light">
+                                            <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
+                                            <h6 class="text-muted">By Dave Snow - 3 days ago</h6>
+                                            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                                         </div>
                                     </div>
-
-                                    <!--Price-->
-                                    <h2 class="font-bold dark-grey-text"><strong>99$</strong></h2>
-                                    <p class="grey-text">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium repellat
-                                        eveniet quia vitae.</p>
-                                    <a class="btn btn-blue font-bold btn-rounded">Buy now</a>
                                 </div>
                             </div>
-
-                        </div>
-                        <!--/.Card-->
-                    </div>
-                    <!--/Third column-->
-
-                </div>
-                <!--/First row-->
 
             </section>
             <!--/Section: Pricing v.3-->
@@ -421,7 +259,7 @@
             <section class="section text-center pb-4">
 
                 <!--Section heading-->
-                <h1 class="mb-5 my-5 pt-5 text-center dark-grey-text wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Our clients</strong> about us</h1>
+                <h1 class="mb-5 my-5 pt-5 text-center dark-grey-text wow fadeIn" data-wow-delay="0.2s"><strong class="font-bold">Today's Highlited Profiles</strong></h1>
 
                 <div class="row">
 
@@ -451,18 +289,9 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">Anna Deynah</h4>
                                         <h6 class="blue-text font-bold">Web Designer</h6>
-                                        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing
                                             elit.
                                         </p>
-
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star-half-full"> </i>
-                                        </div>
                                     </div>
 
                                 </div>
@@ -478,16 +307,9 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">John Doe</h4>
                                         <h6 class="blue-text font-bold">Web Developer</h6>
-                                        <p><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+                                        <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
 
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -502,18 +324,11 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">Abbey Clark</h4>
                                         <h6 class="blue-text font-bold">Photographer</h6>
-                                        <p><i class="fa fa-quote-left"></i> Quis autem vel eum iure reprehenderit qui in ea
+                                        <p> Quis autem vel eum iure reprehenderit qui in ea
                                             voluptate.
                                         </p>
 
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star-o"> </i>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -534,16 +349,9 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">Blake Dabney</h4>
                                         <h6 class="blue-text font-bold">Web Designer</h6>
-                                        <p><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+                                        <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
 
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star-half-full"> </i>
-                                        </div>
+
                                     </div>
 
                                 </div>
@@ -559,18 +367,11 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">Andrea Clay</h4>
                                         <h6 class="blue-text font-bold">Front-end developer</h6>
-                                        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                             elit.
                                         </p>
 
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <!--Grid column-->
@@ -585,16 +386,9 @@
                                         <!--Content-->
                                         <h4 class="dark-grey-text">Cami Gosse</h4>
                                         <h6 class="blue-text font-bold">Phtographer</h6>
-                                        <p><i class="fa fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos.</p>
+                                        <p>At vero eos et accusamus et iusto odio dignissimos.</p>
 
-                                        <!--Review-->
-                                        <div class="grey-text">
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star"> </i>
-                                            <i class="fa fa-star-o"> </i>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <!--Grid column-->
