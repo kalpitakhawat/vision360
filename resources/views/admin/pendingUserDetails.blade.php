@@ -33,7 +33,7 @@
 										{{csrf_field()}}
 										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
 									</form>
-									<form method="post" action="/admin/user/approve/">
+									<form method="post" action="/admin/user/reject/">
 										{{csrf_field()}}
 										<button class="btn btn-danger">Reject<i class="fa fa-"></i> </button>
 									</form>
