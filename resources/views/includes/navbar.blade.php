@@ -1,6 +1,6 @@
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg fixed-top top-nav-collapse white black-text">
+        <nav class="navbar navbar-expand-lg fixed-top top-nav-collapse white">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="/img/vision_360.png" height="70px;" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
@@ -15,10 +15,10 @@
                          <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="/circulars">Circulars</a>
                         </li>
-                        <li class="nav-item">
+     <!--                    <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="#">Requirements</a>
                         </li>
-                        <li class="nav-item">
+ -->                        <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="/events">Events</a>
                         </li>
                         <li class="nav-item">
@@ -27,9 +27,9 @@
                         <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="/members">Members</a>
                         </li>
-                        <li class="nav-item">
+<!--                         <li class="nav-item">
                             <a class="nav-link waves-effect waves-light" href="#">Contact Us</a>
-                        </li>
+                        </li> -->
 
                     </ul>
 

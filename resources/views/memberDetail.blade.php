@@ -5,7 +5,9 @@
 		@include('./includes/headers')
 	</head>
 	<body>
-		@include('./includes/navbar')
+		<header>
+			@include('./includes/navbar')
+		</header>
 		<main>
 			<div class="container-fluid mt-3">
 				<div class="row">

@@ -22,7 +22,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mt-2">
+				<div class="row mt-2 searchArea">
 					<div class="col-12 col-md-8 offset-md-2">
 						<!--First review-->
 						<div class="media mb-1">
@@ -68,5 +68,16 @@
 			</a>
 		</div>
 		@include('./includes/scripts')
+		<script type="text/javascript" src="/js/jimx_quickSearch.js"></script>
+		<script type="text/javascript">	
+			jimxSearch({
+				sbox : "searchArea",
+				sdata : "media",
+				stype : 0,
+				textBox : "#form1",
+				sdisplay : "Displaying results for..."
+			});
+		</script>
+
 	</body>
 </html>

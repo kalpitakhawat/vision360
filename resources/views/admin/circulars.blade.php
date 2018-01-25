@@ -38,7 +38,9 @@
 		</style>
 	</head>
 	<body class="fixed-sn white-skin">
-		@include('../includes/sidenavbar')
+		<header>
+			@include('../includes/sidenavbar')
+		</header>
 		<main>
 			<div class="container">
 				<!--Panel-->

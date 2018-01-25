@@ -36,31 +36,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-9">
                             <div class="row">
-                                <div class="col-12">
-                                    <h4 class="text-center h4">Latest Circulars</h4>
-                                    <div class="list-group transparent">
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <small>Donec id elit non mi porta.</small>
-                                                <small class="text-muted">3 days ago</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <small>Donec id elit non mi porta.</small>
-                                                <small class="text-muted">3 days ago</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <small>Donec id elit non mi porta.</small>
-                                                <small class="text-muted">3 days ago</small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    
-                                    <hr>
-                                </div>
+                          
                             </div>
                             <div class="row">
                                 <div class="col-12">
