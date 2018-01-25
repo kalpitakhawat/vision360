@@ -31,4 +31,12 @@ class adminRootController extends Controller
         //dd($users);
         return view("/admin/user")->with('users',$e);
     }
+    public function changeStatus($status ,Request $r)
+    {
+        $status = strtolower($status);
+
+        if( in_array($status, [ 'approved', 'rejected', 'block', 'unblock'] ) ){
+            User::where('id',$r->input("id"))->update('status',$status);
+        }
+    }
 }

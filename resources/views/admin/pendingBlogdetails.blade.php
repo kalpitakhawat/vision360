@@ -26,10 +26,12 @@
 				</div>
 				<div class="row">
 					<form action="./approve" method="post">
+						{{csrf_filed()}}
 						<input type="hidden" name="id" value="{{$blog->id}}">
 						<button type="submit" class="btn btn-success">Approve</button>
 					</form>
 					<form action="./approve" method="post">
+						{{csrf_filed()}}
 						<input type="hidden" name="id" value="{{$blog->id}}">
 						<button type="submit" class="btn btn-danger">Reject</button>
 					</form>

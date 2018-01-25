@@ -78,7 +78,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/preview/{uid}', 'Admin\adminRootController@pendingUserDetails');
         Route::get('/pending','Admin\adminRootController@pendingIndex');
         Route::get('/','Admin\adminRootController@index');
-
+        Route::post('/{{status}}','Admin\adminRootController@changeStatus');
     });
 });
 

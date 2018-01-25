@@ -43,7 +43,7 @@ class BlogController extends Controller
     	$blog->update();
     }
     public function reject(Request $r)
-    {
+    {   
     	$blog = Blog::where('id',$r->id)->first();
     	$blog->status = "rejected";
     	$blog->update();
