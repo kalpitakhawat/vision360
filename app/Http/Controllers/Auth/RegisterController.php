@@ -41,6 +41,7 @@ class RegisterController extends Controller
         $user = User::find(Auth::id());
         $user->sub_cast = $r->sub_cast;
         $user->birth_date = $r->birth_date;
+        $user->mobile = $r->mobile;
         $user->gender = $r->gender;
         $user->address = $r->address;
         $user->city = $r->city;
