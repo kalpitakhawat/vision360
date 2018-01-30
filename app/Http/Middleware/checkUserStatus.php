@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 
-class checkUserStatus
+class checkUserStatus 
 {
     /**
      * Handle an incoming request.

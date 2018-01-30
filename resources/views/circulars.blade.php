@@ -3,14 +3,18 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		<style type="text/css">
+</style>
 	</head>
 	<body>
-		@include('./includes/navbar')
+		<header>
+			@include('./includes/navbar')
+		</header>
 		<main>
 			<div class="container">
-				<section class="text-center">
+				<section>
 					<!--Section heading-->
-					<h1 class="font-bold h1 py-5">Circulars</h1>
+					<h1 class="main-title py-3">Circulars</h1>
 				</section>
 				<div class="row">
 					<div class="col-12">

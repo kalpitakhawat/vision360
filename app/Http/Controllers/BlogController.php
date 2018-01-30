@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Blog
-use Uuid
+use App\Blog;
+use Uuid;
 use Auth;
 class BlogController extends Controller
 {

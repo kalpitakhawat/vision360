@@ -44,7 +44,7 @@
 				<!--Panel-->
 				<div class="card">
 					<div class="card-header text-white">
-						<h3 class="float-left mt-3">Events</h3><a href="/admin/events/addEvent" class="btn btn-warning float-right">Add Events</a>
+						<h3 class="float-left mt-3">Pending Members</h3>
 					</div>
 					<div class="card-body">
 						<table id="example" class="table table-striped table-bordered table-responsive-md" cellspacing="0" width="100%">
@@ -74,7 +74,7 @@
 									<td>{{$e->email}} </td>
 									<td>{{$e->sub_cast}} </td>
 									<td> 
-									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/user/preview/{{ $e->id }}"> View </a></td>
+									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/users/preview/{{$e->id}}"> View </a></td>
 								</tr>
 								@endforeach
 							</tbody>

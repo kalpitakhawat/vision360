@@ -8,39 +8,39 @@
         <div class="row pt-5 mb-3 text-center d-flex justify-content-center">
 
             <!--Grid column-->
-            <div class="col-md-2 mb-3">
-                <h6 class="title font-bold"><a href="#!">Home</a></h6>
+            <div class="col-md-3 mb-3">
+                <h6 class="title font-bold"><a href="/">Home</a></h6>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-2 mb-3">
-                <h6 class="title font-bold"><a href="#!">Circulars</a></h6>
+            <div class="col-md-3 mb-3">
+                <h6 class="title font-bold"><a href="{{route('circulars')}}">Circulars</a></h6>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-2 mb-3">
+            <!-- <div class="col-md-2 mb-3">
                 <h6 class="title font-bold"><a href="#!">Requirements</a></h6>
+            </div> -->
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 mb-3">
+                <h6 class="title font-bold"><a href="{{route('events')}}">Events</a></h6>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-2 mb-3">
-                <h6 class="title font-bold"><a href="#!">Events</a></h6>
+            <div class="col-md-3 mb-3">
+                <h6 class="title font-bold"><a href="{{route('blogs')}}">Blogs</a></h6>
             </div>
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-2 mb-3">
-                <h6 class="title font-bold"><a href="#!">Blogs</a></h6>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-2 mb-3">
-                <h6 class="title font-bold"><a href="#!">Contact Us</a></h6>
-            </div>
+            <!-- <div class="col-md-2 mb-3">
+                <h6 class="title font-bold"><a href="{{('')}}">Contact Us</a></h6>
+            </div> -->
             <!--Grid column-->
 
         </div>

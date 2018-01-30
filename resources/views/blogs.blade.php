@@ -5,13 +5,15 @@
 		@include('./includes/headers')
 	</head>
 	<body>
-		@include('./includes/navbar')
+		<header>
+			@include('./includes/navbar')
+		</header>
 		<main>
 			<div class="container">
-				<div class="row justify-content-center">
-					<section class="text-center">
+				<div class="row ">
+					<section >
 						<!--Section heading-->
-						<h3 class="font-bold h3 py-2">Blogs</h3>
+						<h1 class="main-title py-3">Blogs</h1>
 					</section>
 				</div>
 				<div class="row">

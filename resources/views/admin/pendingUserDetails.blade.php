@@ -17,52 +17,49 @@
 							<div class="card-up white px-0"></div>
 							
 							<!--Avatar-->
-							<div class="avatar">
-								<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-responsive">
+							<div class="avatar rounded-circle">
+								<img src="{{$user->avtar}}" class="img-responsive" style="height: 100%; width: auto;">
 							</div>
 							
 							<div class="card-body">
 								<!--Name-->
 								<h4 class="mt-1">
 								<strong> {{$user->f_name}}&nbsp;{{$user->l_name}}</strong>
-								<!-- <p class="dark-grey-text">{{$user->edu_qualification}}</p> -->
+								<p class="dark-grey-text">({{$user->sub_cast}})</p>
 								</h4>
 								<hr>
 								@if( $user->status == 'applied' || $user->status=='rejected' )
-									<form method="post" action="/admin/user/approved/">
+									<form method="post" action="/admin/users/approve">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
 									</form>
-									<form method="post" action="/admin/user/rejected/">
+									<form method="post" action="/admin/users/reject">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-danger">Reject<i class="fa fa-"></i> </button>
 									</form>
 								@elseIf( $user->status == 'rejected')
-										<form method="post" action="/admin/user/approved/">
+										<form method="post" action="/admin/users/approve">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Approve <i class="fa fa-"></i> </button>
 									</form>
 								@else
 									@if( $user->status == 'blocked' )
-									<form method="post" action="/admin/user/block/">
+									<form method="post" action="/admin/users/block">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Unblock <i class="fa fa-"></i> </button>
 									</form>
 									@else
-									<form method="post" action="/admin/user/unblock/">
+									<form method="post" action="/admin/users/approve">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-danger">Block<i class="fa fa-"></i> </button>
 									</form>
 									@endif
-								@endif
-
-																<!--Quotation-->
-								<!-- <p class="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p> -->
+								@endif								
 								<hr>
 								<div class="row justify-content-center">
 									<div class="col-12 col-md-6 ">
@@ -89,6 +86,14 @@
 											</div>
 											<div class="col-12 col-md-6">
 												<p><strong><i class="fa fa-flask" aria-hidden="true"></i> Expertise</strong><br>{{$user->expertise}}</p>
+												<hr>
+											</div>
+											<div class="col-12 col-md-6">
+												<p><strong><i class="fa fa-briefcase" aria-hidden="true"></i> Present Activity</strong><br>{{$user->present_activity}}</p>
+												<hr>
+											</div>
+											<div class="col-12 col-md-6">
+												<p><strong><i class="fa fa-building-o" aria-hidden="true"></i> Expertise</strong><br>{{$user->company_name_address}}</p>
 												<hr>
 											</div>
 										</div>

@@ -3,6 +3,11 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		<style type="text/css">
+	main{
+		margin-top: 140px;
+	}
+</style>
 	</head>
 	<body>
 		@include('./includes/navbar')

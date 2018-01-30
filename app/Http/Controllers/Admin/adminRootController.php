@@ -13,7 +13,7 @@ class adminRootController extends Controller
     	//return view('admin/pendingUsers');
     	$e = User::where("status","applied")->get();
     	//dd($users);
-    	return view("/admin/user/pendingUsers")->with('users',$e);
+    	return view("/admin/pendingUsers")->with('users',$e);
     }
     public function pendingUserDetails($uid)
     {
@@ -31,12 +31,26 @@ class adminRootController extends Controller
         //dd($users);
         return view("/admin/user")->with('users',$e);
     }
-    public function changeStatus($status ,Request $r)
+    public function approve(Request $r)
     {
-        $status = strtolower($status);
+        $u = User::find($r->input('id'));
+        $u->status = 'active';
+        $u->update();
+        return redirect()->route('admin.users.pending');
 
-        if( in_array($status, [ 'approved', 'rejected', 'block', 'unblock'] ) ){
-            User::where('id',$r->input("id"))->update('status',$status);
-        }
+    }
+    public function reject(Request $r)
+    {
+        $u = User::find($r->input('id'));
+        $u->status = 'rejected';
+        $u->update();
+        return redirect()->route('admin.users.pending');
+    }
+    public function block(Request $r)
+    {
+        $u = User::find($r->input('id'));
+        $u->status = 'blocked';
+        $u->update();
+        return redirect()->route('admin.users.pending');
     }
 }

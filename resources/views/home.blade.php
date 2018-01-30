@@ -7,7 +7,11 @@
         <title>Material Design Bootstrap</title>
         @include('./includes/headers')
         <link rel="stylesheet" href="/css/landing.min.css">
-        
+        <style type="text/css">
+        main{
+        margin-top: 50px;
+        }
+        </style>
     </head>
     <body>
         @include('./includes/navbar')
