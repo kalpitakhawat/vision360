@@ -30,9 +30,9 @@ class BlogController extends Controller
     public function pendingBlogDetails(Request $r,$bid)
     {
     	$blog = Blog::where('id',$bid)->first();
-        if( $user ){
+        if( $blog ){
     	   $u= User::where('id',$blog->user_id)->first();
-    	   return view('admin/pendingBlogs')->with('blog',$blog)->with('user' ,$u);
+    	   return view('admin/pendingBlogdetails')->with('blog',$blog)->with('user' ,$u);
         }
         return Redirect::back();
     }
@@ -41,12 +41,15 @@ class BlogController extends Controller
     	$blog = Blog::where('id',$r->id)->first();
     	$blog->status = "Active";
     	$blog->update();
+        return redirect('/admin/blogs/pending');
     }
     public function reject(Request $r)
     {   
     	$blog = Blog::where('id',$r->id)->first();
     	$blog->status = "rejected";
     	$blog->update();
+        return redirect('/admin/blogs');
+
     }
 
 }

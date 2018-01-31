@@ -14,11 +14,12 @@ class BlogController extends Controller
    		$b->blog_id = Uuid::generate(5 , $r->input('title') , Uuid::NS_DNS);
    		$b->user_id= Auth::id();
    		$b->title = $r->input('title');
-   		$b->short_desc = $r->input('short_desc');
+         $b->short_desc = $r->input('short_desc');
+   		$b->categories = $r->input('categories');
    		$b->desc = $r->input('desc');
    		$b->status = 'pending';
    		$b->isActive= 'true';
-   		$b-->save();
+   		$b->save();
          return redirect('/members/'.Auth::id().'?new=true');
    	}
 

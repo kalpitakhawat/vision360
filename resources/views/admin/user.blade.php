@@ -51,30 +51,33 @@
 							<thead class="text-center">
 								<tr>
 									<th>FirstName</th>
-									<th>LastNAme</th>
+									<th>LastName</th>
 									<th>Email</th>
 									<th>Sub Cast</th>
+									<th>Status</th>
 									<th>Action</th>
 								</tr>
 							</thead>
 							<tfoot class="text-center">
 							<tr>
 								<th>FirstName</th>
-								<th>LastNAme</th>
+								<th>LastName</th>
 								<th>Email</th>
 								<th>Sub Cast</th>
+								<th>Status</th>
 								<th>Action</th>
 							</tr>
 							</tfoot>
-							<tbody>
+							<tbody class="text-center">
 								@foreach ($users as $e)
 								<tr>
 									<td>{{$e->f_name}} </td>
 									<td>{{$e->l_name}} </td>
 									<td>{{$e->email}} </td>
 									<td>{{$e->sub_cast}} </td>
+									<td>{{$e->status}} </td>
 									<td>
-										<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/user/preview/{{ $e->id }}"> View </a></td>
+										<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/users/preview/{{ $e->id }}"> View </a></td>
 									</tr>
 									@endforeach
 								</tbody>

@@ -74,7 +74,7 @@
 									<td>{{$blog->short_desc}} </td>
 									<td>{{$blog->created_at}} </td>
 									<td> 
-									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/user/preview/{{ $blog->id }}"> View </a></td>
+									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/blogs/preview/{{ $blog->id }}"> View </a></td>
 								</tr>
 								@endforeach
 							</tbody>

@@ -27,7 +27,7 @@ class adminRootController extends Controller
      public function index()
     {
         //return view('admin/pendingUsers');
-        $e = User::all();
+        $e = User::where('type' , 'user')->where('status' , '!=' , 'applied')->where('status' , '!=' , 'register')->where('status' , '!=' , 'donation')->get();
         //dd($users);
         return view("/admin/user")->with('users',$e);
     }
@@ -44,13 +44,13 @@ class adminRootController extends Controller
         $u = User::find($r->input('id'));
         $u->status = 'rejected';
         $u->update();
-        return redirect()->route('admin.users.pending');
+        return redirect()->route('admin.users.show');
     }
     public function block(Request $r)
     {
         $u = User::find($r->input('id'));
         $u->status = 'blocked';
         $u->update();
-        return redirect()->route('admin.users.pending');
+        return redirect()->route('admin.users.show');
     }
 }

@@ -53,6 +53,7 @@
 									<th>Title</th>
 									<th>Author</th>
 									<th>Short Description</th>
+									<th>Status</th>
 									<th>Posted At</th>
 									<th>Action</th>
 								</tr>
@@ -62,6 +63,7 @@
 								<th>Title</th>
 								<th>Author</th>
 								<th>Short Description</th>
+								<th>Status</th>
 								<th>Posted At</th>
 								<th>Action</th>
 							</tr>
@@ -72,8 +74,10 @@
 									<td>{{$blog->title}} </td>
 									<td>{{$blog->user_name}} </td>
 									<td>{{$blog->short_desc}} </td>
+									<td>{{$blog->status}} </td>
 									<td>{{$blog->created_at}} </td>
-									<td></td>
+									<td> 
+									<a class="btn-sm col-md-12 text-center btn-outline-primary" target="_blank" href="/admin/blogs/preview/{{ $blog->id }}"> View </a></td>
 								</tr>
 								@endforeach
 							</tbody>

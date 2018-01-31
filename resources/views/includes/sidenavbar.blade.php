@@ -12,31 +12,31 @@
                 <!-- Side navigation links -->
                 <li>
                     <ul class="collapsible collapsible-accordion">
-                        <li><a href=".\" class="waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Dashboard</a>
+                        <li><a style="width:100%;" href=".\" class="waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Dashboard</a>
                         </li>
-                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Members<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <li><a style="width:100%;" class="collapsible-header waves-effect arrow-r"><i class="fa fa-hand-pointer-o"></i> Members<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="{{route('admin.users.pending')}}" class="waves-effect">Pending Applications</a>
+                                    <li><a style="width:100%;" href="{{route('admin.users.pending')}}" class="waves-effect">Pending Applications</a>
                                     </li>
-                                    <li><a href="{{route('admin.users.show')}}" class="waves-effect">Approved Members</a>
+                                    <li><a style="width:100%;" href="{{route('admin.users.show')}}" class="waves-effect">Approved Members</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> Blogs<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <li><a style="width:100%;" class="collapsible-header waves-effect arrow-r"><i class="fa fa-eye"></i> Blogs<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="#" class="waves-effect">Submited Blogs</a>
+                                    <li><a style="width:100%;" href="{{route('admin.blogs.pending')}} " class="waves-effect">Submited Blogs</a>
                                     </li>
-                                    <li><a href="#" class="waves-effect">Publihed Blogs</a>
+                                    <li><a style="width:100%;" href="{{route('admin.blogs.show')}} " class="waves-effect">Publihed Blogs</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="./circulars" class=" waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Circulars</a></li>
-                        <li><a href="./events" class="waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Events</a></li>
-                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Advertisements</a></li>
+                        <li><a style="width:100%;" href="./circulars" class=" waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Circulars</a></li>
+                        <li><a style="width:100%;" href="./events" class="waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Events</a></li>
+                        <li><a style="width:100%;" class="collapsible-header waves-effect arrow-r"><i class="fa fa-envelope-o"></i> Advertisements</a></li>
                     </ul>
                 </li>
                 <!--/. Side navigation links -->
@@ -55,14 +55,11 @@
                 <p>Material Design for Bootstrap</p>
             </div>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Settings</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </div>
+                <li class="nav-item">
+                    <form action="/logout" method="post">
+                        {{csrf_field()}}
+                        <button type="submit" class="nav-link waves-effect waves-light"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Logout</span></button>
+                    </form>
                 </li>
             </ul>
         </nav>

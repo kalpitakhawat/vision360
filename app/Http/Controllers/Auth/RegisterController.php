@@ -81,9 +81,4 @@ class RegisterController extends Controller
         $user->update();
         return redirect('/register/pending');
     }
-    
-    public function pending(Request $r)
-    {
-        return view('pending');
-    }
 }

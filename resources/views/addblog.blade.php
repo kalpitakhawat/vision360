@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		@include('./includes/navbar')
-		<main>
+		<main id="app">
 			<div class="container mt-2">
 				<section class="text-center">
 					<!--Section heading-->
@@ -24,6 +24,11 @@
 								<textarea id="textarea-char-counter" name="short_desc" class="md-textarea" length="160"></textarea>
 								<label for="textarea-char-counter">Short Description</label>
 							</div>
+							<label for="textarea-char-counter">Tags <small>(Type a tag and press enter to add tag. Click X to remove it.)</small></label>
+							<div class="md-form">
+								<div class="chips chips-placeholder"></div>
+							</div>
+							<input type="hidden" name="categories" :value="categories">
 							<label class="mb-2">Content</label>
 							<div class="md-form">
 								<textarea id="textarea-description" name="desc"></textarea>
@@ -55,6 +60,40 @@
 		'//www.tinymce.com/css/codepen.min.css'
 		]
 		});
+		</script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+		<script type="text/javascript">
+			var app = new Vue({
+				el:'#app',
+				data:{
+					tags:[],
+					categories:'',
+				},
+				watch:{
+					tags:function () {
+						var self =this;
+						var categories = '';
+						self.tags.forEach(function (element) {
+							categories += element['tag'] + ',' ; 
+						});
+						self.categories = categories.slice(0, -1);
+					}
+				}
+			});
+		</script>
+		<script type="text/javascript">
+			$('.chips-placeholder').material_chip({
+			    placeholder: '+Tag',
+			    secondaryPlaceholder: 'Enter a tag',
+			});
+			$('.chips').on('chip.add', function(e, chip){
+				app.tags = $('.chips').material_chip('data');
+			});
+
+			  $('.chips').on('chip.delete', function(e, chip){
+			    app.tags = $('.chips').material_chip('data');
+			  });
 		</script>
 	</body>
 </html>

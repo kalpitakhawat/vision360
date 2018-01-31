@@ -9,12 +9,8 @@
 			<div class="container">
 				<section class="text-center">
 					<!--Section heading-->
-					<h3 class="font-bold h3 py-3">Donation</h3>
+					<h1 class="font-bold h1 py-3">Your Registration Request is Rejected By Admin . For More Details Contact to Admin</h1>
 				</section>
-				<form action="/register/donation" method="post">
-					{{csrf_field()}}
-					<button type="submit" class="btn btn-success">Donate</button>
-				</form>
 			</div>
 		</main>
 		@include('./includes/scripts')

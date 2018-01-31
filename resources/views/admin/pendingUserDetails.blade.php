@@ -4,8 +4,8 @@
 		<title></title>
 		@include('./includes/headers')
 	</head>
-	<body>
-		@include('./includes/navbar')
+	<body class="fixed-sn white-skin"> 
+		@include('./includes/sidenavbar')
 		<main>
 			<div class="container-fluid mt-3">
 				<div class="row">
@@ -47,13 +47,13 @@
 									</form>
 								@else
 									@if( $user->status == 'blocked' )
-									<form method="post" action="/admin/users/block">
+									<form method="post" action="/admin/users/approve">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-success">Unblock <i class="fa fa-"></i> </button>
 									</form>
 									@else
-									<form method="post" action="/admin/users/approve">
+									<form method="post" action="/admin/users/block">
 										{{csrf_field()}}
 										<input type="hidden" name="id" value="{{$user->id}}">
 										<button class="btn btn-danger">Block<i class="fa fa-"></i> </button>

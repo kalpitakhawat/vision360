@@ -19,7 +19,7 @@ class CreateBlogsTable extends Migration
             $table->string('blog_id')->nullable();
             $table->string('user_id')->nullable();
             $table->string('title')->nullable();
-            $table->string('short_dec')->nullable();
+            $table->string('short_desc')->nullable();
             $table->text('desc')->nullable();
             $table->text('categories')->nullable();
             $table->string('status')->nullable();

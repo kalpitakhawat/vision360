@@ -11,18 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-Route::get('/events', "EventController@index")->name('events');
-Route::get('/events/{id}', function () {
-    return view('events.details');
-})->name('eventDetail');
-Route::get('/circulars', 'CircularController@index')->name('circulars');
-Route::get('/circulars/{id}','CircularController@detail' )->name('circulars.detail');
-Route::get('/blogs', function () {
-    return view('blogs');
-})->name('blogs');
+//Routes For Guest And Member Only
+Route::group(['middleware' => ['IsNotAdmin']],function ()
+{
+    Route::get('/', function () {
+        return view('home');
+    })->name('home');
+    Route::get('/events', "EventController@index")->name('events');
+    Route::get('/events/{id}', function () {
+        return view('events.details');
+    })->name('eventDetail');
+    Route::get('/circulars', 'CircularController@index')->name('circulars');
+    Route::get('/circulars/{id}','CircularController@detail' )->name('circulars.detail');
+    Route::get('/blogs', function () {
+        return view('blogs');
+    })->name('blogs');
+});
 // Route::get('/home2', function () {
 //     return view('welcome');
 // });
@@ -49,8 +53,19 @@ Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
         Route::get('/register/second', 'Auth\RegisterController@secondForm')->name('register.second');
         Route::post('/register/second', 'Auth\RegisterController@secondEntry')->name('register.second.post');
         Route::get('/register/donation', 'Auth\RegisterController@donationForm')->name('register.donation');
-        Route::post('/register/donate', 'Auth\RegisterController@donate')->name('register.donate.post');
-        Route::get('/register/pending', 'Auth\RegisterController@pending')->name('register.pending');
+        Route::post('/register/donation', 'Auth\RegisterController@donate')->name('register.donation.post');
+        Route::get('/register/pending', function ()
+        {
+            return view('pending');
+        })->name('register.pending');
+        Route::get('/register/reject', function ()
+        {
+            return view('reject');
+        })->name('register.reject');
+        Route::get('/register/block', function ()
+        {
+            return view('block');
+        })->name('register.block');
 
 });
 

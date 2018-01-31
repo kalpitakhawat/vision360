@@ -6,7 +6,7 @@
 	</head>
 	<body class="fixed-sn white-skin">
 		@include('../includes/sidenavbar')
-		
+		<main></main>
 		@include('./includes/scripts')
 		
 	</body>

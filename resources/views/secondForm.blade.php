@@ -35,7 +35,7 @@
 									<div class="file-field pt-5 mt-md-5">
 										<div class="btn btn-primary btn-sm">
 											<span>Choose file</span>
-											<input type="file" accept="image/*" name="avtar" >
+											<input type="file" accept="image/*" name="avtar" id="files" >
 										</div>
 										<div class="file-path-wrapper">
 											<input class="file-path validate" type="text" placeholder="Upload your Profile Pic">
