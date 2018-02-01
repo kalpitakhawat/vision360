@@ -12,4 +12,14 @@ class EventController extends Controller
     	$re = Event::where('type','recent')->get();
         return view("/events")->with('uevents',$ue)->with('revents' , $re);
     }
+    public function detail(Request $r , $id)
+    {	
+    	$e = Event::find($id);
+    	if ($e && $e->type=='true') {
+    		return view('/eventDetails')->with('event' , $e);
+    	} else {
+    		return redirect('/events');
+    	}
+    	
+    }
 }

@@ -18,9 +18,7 @@ Route::group(['middleware' => ['IsNotAdmin']],function ()
         return view('home');
     })->name('home');
     Route::get('/events', "EventController@index")->name('events');
-    Route::get('/events/{id}', function () {
-        return view('events.details');
-    })->name('eventDetail');
+    Route::get('/events/{id}','EventController@detail')->name('eventDetail');
     Route::get('/circulars', 'CircularController@index')->name('circulars');
     Route::get('/circulars/{id}','CircularController@detail' )->name('circulars.detail');
     Route::get('/blogs', function () {
@@ -34,15 +32,15 @@ Route::group(['middleware' => ['IsNotAdmin']],function ()
 Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
 {
         Route::get('/account/edit' , 'Auth\RegisterController@edit');
+        Route::post('/account/edit','Auth\RegisterController@update');
         //blogs
         Route::get('/blogs/write', function () {
             return view('addblog');
         })->name('blogs.write');
         Route::post('/blogs/api', 'BlogController@ApiIndex')->name('blog.show.api');
         Route::post('/blogs/doAdd', 'BlogController@create')->name('blog.add.post');
-        Route::get('/blogs/{id}', function () {
-            return view('blogDetail');
-        })->name('blogs.detail');
+        Route::get('/blogs/{id}', 'BlogController@detail')->name('blogs.detail');
+        Route::post('/blogs/delete', 'BlogController@delete')->name('blogs.delete.post');
 
         //members
         Route::get('/members', function () {

@@ -52,7 +52,7 @@
 								</div>
 								<div class="col-12 col-md-4">
 									<div class="md-form">
-										<input placeholder="Select birth date" type="date" id="birth-date" class="form-control datepicker" required="" readonly="false">
+										<input placeholder="Select birth date" type="date" id="birth-date" class="form-control datepicker" required="" readonly="false" name="birth_date">
 										<label for="date-picker-example">Birthdate</label>
 									</div>
 								</div>

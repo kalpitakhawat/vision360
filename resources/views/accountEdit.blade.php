@@ -33,7 +33,7 @@
 						</div>
 						<div class="col-12 col-md-4">
 							<div class="md-form">
-								<input placeholder="Select birth date" type="date" id="birth-date" class="form-control datepicker" required="" readonly="false" data-value="{{$user->birth_date}}">
+								<input placeholder="Select birth date" type="date" id="birth-date" class="form-control datepicker" required="" readonly="false" name="birth_date" data-value="{{$user->birth_date}}">
 								<label for="date-picker-example">Birthdate</label>
 							</div>
 						</div>
@@ -102,7 +102,7 @@
 						</div>
 						<div class="col-12">
 							<div class="md-form">
-								<input type="text" id="present_activity" name="present_activity" class="form-control" required="" name="{{$user->present_activity}} ">
+								<input type="text" id="present_activity" name="present_activity" class="form-control" required="" value="{{$user->present_activity}} ">
 								<label for="form1" class="">Present Activity</label>
 								<small id="present_activityHelp" class="form-text text-muted">Write about what you doing currently</small>
 							</div>

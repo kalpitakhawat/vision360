@@ -56,8 +56,8 @@ class RegisterController extends Controller
         $user->expertise = $r->input('expertise');
         $user->present_activity = $r->input('present_activity');
         $user->company_name_address = $r->input('company_name_address');
-        $user->nature_of_busines = $r->input('nature_of_busines');
-        $user->company_pincode = $r->input('company_pincode');
+        $user->nature_of_busines = $r->input('nature_of_business');
+        $user->company_pincode = $r->input('c_pincode');
         $user->about = $r->input('about');
         $user->website = $r->input('website');
         $avtar = $r->file('avtar');
@@ -86,5 +86,25 @@ class RegisterController extends Controller
         $u = User::find(Auth::id());
         $sc = ["Kutchi Visa Oswal","Kutchi Dasa Oswal","Gurjar Visa Shrimali","Gurjar Dasa Shrimali","Vagad Sat Chovishi","Vagad Be Chovishi"];
         return view('accountEdit')->with('user' , $u)->with('sc' ,$sc);
+    }
+    public function update(Request $r)
+    {
+        $user = User::find(Auth::id());
+        $user->sub_cast = $r->input('sub_cast');
+        $user->birth_date = $r->input('birth_date');
+        $user->mobile = $r->input('mobile');
+        $user->gender = $r->input('gender');
+        $user->address = $r->input('address');
+        $user->city = $r->input('city');
+        $user->pincode = $r->input('pincode');
+        $user->edu_qualification = $r->input('edu_qualification');
+        $user->expertise = $r->input('expertise');
+        $user->present_activity = $r->input('present_activity');
+        $user->company_name_address = $r->input('company_name_address');
+        $user->nature_of_busines = $r->input('nature_of_business');
+        $user->company_pincode = $r->input('c_pincode');
+        $user->about = $r->input('about');
+        $user->website = $r->input('website');
+        $user->update();
     }
 }
