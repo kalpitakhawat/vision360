@@ -3,8 +3,8 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
-		<style type="text/css">
-</style>
+		<link rel="stylesheet" href="/css/landing.min.css">
+		
 	</head>
 	<body>
 		<header>

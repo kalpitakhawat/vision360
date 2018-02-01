@@ -33,6 +33,7 @@ Route::group(['middleware' => ['IsNotAdmin']],function ()
 //Ristricted For Login
 Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
 {
+        Route::get('/account/edit' , 'Auth\RegisterController@edit');
         //blogs
         Route::get('/blogs/write', function () {
             return view('addblog');
@@ -47,7 +48,7 @@ Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
         Route::get('/members', function () {
             return view('members');
         })->name('members');
-        Route::get('/members/{id}', 'MemberController@index')->name('members.detail');
+        Route::get('/members/{id}', 'MemberController@detail')->name('members.detail');
 
         //After Basic Register
         Route::get('/register/second', 'Auth\RegisterController@secondForm')->name('register.second');

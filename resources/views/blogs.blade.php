@@ -3,6 +3,7 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		<link rel="stylesheet" href="/css/landing.min.css">
 	</head>
 	<body>
 		<header>

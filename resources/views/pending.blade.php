@@ -3,6 +3,7 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		
 	</head>
 	<body>
 		<main>

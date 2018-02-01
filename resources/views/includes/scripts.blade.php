@@ -3,6 +3,8 @@
 <script src="/js/bootstrap.min.js" charset="utf-8"></script>
 <script src="/js/mdb.min.js" charset="utf-8"></script>
 <script src="/js/compiled.min.js" charset="utf-8"></script>
+
+
 <script type="text/javascript">
 	$(".button-collapse").sideNav();
 </script>

@@ -1,9 +1,3 @@
-<!-- <form method="post" enctype="multipart/form-data" action="/register/second">
-	{{ 	csrf_field() }}
-	<input type="file" name="avtar">
-	<input type="submit" name="submit">
-</form> -->
-
 <!DOCTYPE html>
 <html>
 	<head>

@@ -81,4 +81,10 @@ class RegisterController extends Controller
         $user->update();
         return redirect('/register/pending');
     }
+    public function edit()
+    {
+        $u = User::find(Auth::id());
+        $sc = ["Kutchi Visa Oswal","Kutchi Dasa Oswal","Gurjar Visa Shrimali","Gurjar Dasa Shrimali","Vagad Sat Chovishi","Vagad Be Chovishi"];
+        return view('accountEdit')->with('user' , $u)->with('sc' ,$sc);
+    }
 }

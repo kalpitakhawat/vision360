@@ -93,7 +93,7 @@
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-building-o" aria-hidden="true"></i> Expertise</strong><br>{{$user->company_name_address}}</p>
+												<p><strong><i class="fa fa-building-o" aria-hidden="true"></i> Company Name And Address</strong><br>{{$user->company_name_address}}</p>
 												<hr>
 											</div>
 										</div>

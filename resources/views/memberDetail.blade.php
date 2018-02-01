@@ -3,11 +3,8 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
-		<style type="text/css">
-	main{
-		margin-top: 140px;
-	}
-</style>
+		<link rel="stylesheet" href="/css/landing.min.css">
+		
 	</head>
 	<body>
 		<header>
@@ -24,47 +21,62 @@
 							<div class="card-up white px-0"></div>
 							
 							<!--Avatar-->
-							<div class="avatar">
-								<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-responsive">
+							<div class="avatar rounded-circle">
+								<img src="{{$user->avtar}}" class="img-responsive" style="height: 100%; width: auto;">
 							</div>
 							
 							<div class="card-body">
 								<!--Name-->
 								<h4 class="mt-1">
-								<strong>John Doe</strong>
-								<p class="dark-grey-text">abc at xyz company</p>
+								<strong> {{$user->f_name}}&nbsp;{{$user->l_name}}</strong>
+								<p class="dark-grey-text">({{$user->sub_cast}})</p>
 								</h4>
 								<hr>
-								<!--Quotation-->
-								<p class="dark-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci.</p>
+								<div class="col-12">
+									<p><strong> Bio</strong><br>{{$user->about}}</p>
+								</div>
+								
 								<hr>
 								<div class="row justify-content-center">
 									<div class="col-12 col-md-6 ">
 										<div class="row">
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</strong><br>abc@abc.com</p>
+												<p><strong><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</strong><br>{{$user->email}}</p>
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</strong><br>+91 9727331128</p>
+												<p><strong><i class="fa fa-mobile" aria-hidden="true"></i> Mobile</strong><br>{{$user->mobile}}</p>
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-minus" aria-hidden="true"></i> City</strong><br>Ahmedabad</p>
+												<p><strong><i class="fa fa-minus" aria-hidden="true"></i> City</strong><br>{{$user->city}}</p>
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Pincode</strong><br>123456</p>
+												<p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Pincode</strong><br>{{$user->pincode}}</p>
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</strong><br>B.E. IT vkfbngdjbngfuhgfufoifywer</p>
+												<p><strong><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</strong><br>{{$user->edu_qualification}}</p>
 												<hr>
 											</div>
 											<div class="col-12 col-md-6">
-												<p><strong><i class="fa fa-flask" aria-hidden="true"></i> Expertise</strong><br>ABCDEF GHI</p>
+												<p><strong><i class="fa fa-flask" aria-hidden="true"></i> Expertise</strong><br>{{$user->expertise}}</p>
 												<hr>
 											</div>
+											<div class="col-12 col-md-6">
+												<p><strong><i class="fa fa-briefcase" aria-hidden="true"></i> Present Activity</strong><br>{{$user->present_activity}}</p>
+												<hr>
+											</div>
+											<div class="col-12 col-md-6">
+												<p><strong><i class="fa fa-building-o" aria-hidden="true"></i> Company Name And Address</strong><br>{{$user->company_name_address}}</p>
+												<hr>
+											</div>
+											@if(Auth::id() == $user->id)
+											<div class="col-12">
+												<a type="button" class="btn btn-outline-info waves-effect" href="/account/edit">Edit Account</a>
+											</div>
+											@endif
 										</div>
 									</div>
 								</div>
@@ -76,41 +88,24 @@
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-sm-8">
-                                <h2 class="h1 text-center py-5">Recent Blogs</h2>
-                                <!--First review-->
-                                <div class="media mb-1">
-                                    <a class="media-left waves-light">
-                                        <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-13.jpg" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                        <h6 class="text-muted">By John Doe - 3 days ago</h6>
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                    </div>
-                                </div>
-                                <!--Second review-->
-                                <div class="media mb-1">
-                                    <a class="media-left waves-light">
-                                        <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                        <h6 class="text-muted">By Anna Casie - 3 days ago</h6>
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                    </div>
-                                </div>
-                                <!--Second review-->
-                                <div class="media mb-1">
-                                    <a class="media-left waves-light">
-                                        <img class="rounded-circle" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="/blogs/1"><h4 class="media-heading">Blog Title</h4></a>
-                                        <h6 class="text-muted">By Dave Snow - 3 days ago</h6>
-                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
-                                    </div>
-                                </div>
-                            </div>
+						<h2 class="h1 text-center py-5">Recent Blogs</h2>
+						@if(count($blogs) <= 0)
+						<div class="col-12 text-center">
+							<h3 style="text-transform: capitalize;">No Any Blogs By {{$user->f_name}}</h3 style="text-transform: capitalize;">
+						</div>
+						@else
+						@foreach($blogs as $blog)
+						<div class="media mb-1">
+							<div class="media-body">
+								<a href="/blogs/{{$blog->id}}"><h4 class="media-heading">{{$blog->title}}</h4></a>
+								<h6 class="text-muted">{{$blog->created_at}}</h6>
+								<p class="text-justify">{{$blog->short_desc}}</p>
+							</div>
+						</div>
+						<hr>
+						@endforeach
+						@endif
+					</div>
 				</div>
 			</div>
 		</main>

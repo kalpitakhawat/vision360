@@ -3,14 +3,10 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
-		<style type="text/css">
-	main{
-		margin-top: 140px;
-	}
-</style>
+		<link rel="stylesheet" href="/css/landing.min.css">
 	</head>
 	<body>
-		@include('./includes/navbar')
+		<header>@include('./includes/navbar')</header>
 		<main>
 			<div class="container mt-3">
 				<div class="row text-center">
