@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
         @include('./includes/headers')
     </head>
     <body>
@@ -31,12 +30,12 @@
                     </div>
                 </div>
             </div>
-            <section class="blue py-5 lighten-5">
-                <div class="container">
+            <section class="py-5">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12 col-md-9">
                             <div class="row">
-                          
+                                
                             </div>
                             <div class="row">
                                 <div class="col-12">
@@ -189,48 +188,60 @@
                         <div class="col-sm12 col-md-3">
                             <div class="row my-3">
                                 <div class="col-12">
-                                    <!-- <h5 class="text-center text-muted">Advertisement</h5> -->
-                                    <img src="./img/add1.jpg" class="img-fluid" alt="Responsive image">
-                                </div>
-                            </div>
-                            <div class="row mt-5">
-                                <div class="col-sm-12">
-                                    <h5 class="text-center mb-5">Upcoming Events</h5>
-                                    <!--Card Narrower-->
-                                    <div class="text-center card card-cascade narrower">
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" alt="">
-                                            <a>
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                        <!--/.Card image-->
-                                        <!--Card content-->
-                                        <div class="card-body">
-                                            <h5 class="pink-text"><i class="fa fa-calendar"></i> DD/MM/YYYY</h5>
-                                            <!--Title-->
-                                            <h4 class="card-title">Event Title</h4>
-                                            <!--Text-->
-                                            <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-                                            <a class="btn btn-unique">View Details</a>
-                                        </div>
-                                        <!--/.Card content-->
+                                    <h4 class="text-center h4 mb-5">Latest Circulars</h4>
+                                    <div class="list-group transparent">
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small class="text-muted">3 days ago</small>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small class="text-muted">3 days ago</small>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                            <small class="text-muted">3 days ago</small>
+                                        </a>
                                     </div>
-                                    <!--/.Card Narrower-->
-                                    <hr>
                                 </div>
+                                <div class="row mt-5">
+                                    <div class="col-sm-12">
+                                        <h5 class="text-center mb-5">Upcoming Events</h5>
+                                        <!--Card Narrower-->
+                                        <div class="text-center card card-cascade narrower">
+                                            <!--Card image-->
+                                            <div class="view overlay hm-white-slight">
+                                                <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" alt="">
+                                                <a>
+                                                    <div class="mask"></div>
+                                                </a>
+                                            </div>
+                                            <!--/.Card image-->
+                                            <!--Card content-->
+                                            <div class="card-body">
+                                                <h5 class="pink-text"><i class="fa fa-calendar"></i> DD/MM/YYYY</h5>
+                                                <!--Title-->
+                                                <h4 class="card-title">Event Title</h4>
+                                                <!--Text-->
+                                                <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                                                <a class="btn btn-unique">View Details</a>
+                                            </div>
+                                            <!--/.Card content-->
+                                        </div>
+                                        <!--/.Card Narrower-->
+                                        <hr>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
-        @include('./includes/footer')
-        @include('./includes/scripts')
-        <script type="text/javascript">
-        new WOW().init();
-        </script>
-    </body>
-</html>
+                </section>
+            </main>
+            @include('./includes/footer')
+            @include('./includes/scripts')
+            <script type="text/javascript">
+            new WOW().init();
+            </script>
+        </body>
+    </html>

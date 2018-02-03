@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
 		@include('./includes/headers')
-		<link rel="stylesheet" href="/css/landing.min.css">
 		
 	</head>
 	<body>
@@ -34,7 +32,7 @@
 										</div>
 										<!--/.Card image-->
 										<!--Card content-->
-										<div class="card-body">
+										<div class="card-body text-center">
 											<h5 class="pink-text"><i class="fa fa-calendar"></i> {{$ue->time}}</h5>
 											<!--Title-->
 											<h4 class="card-title">{{$ue->title}} </h4>
@@ -71,7 +69,7 @@
 										</div>
 										<!--/.Card image-->
 										<!--Card content-->
-										<div class="card-body">
+										<div class="card-body text-center">
 											<h5 class="pink-text"><i class="fa fa-calendar"></i> {{$re->time}}</h5>
 											<!--Title-->
 											<h4 class="card-title">{{$re->title}} </h4>

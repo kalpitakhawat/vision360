@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
 		@include('./includes/headers')
-		<link rel="stylesheet" href="/css/landing.min.css">
 		
 	</head>
 	<body>
@@ -16,6 +14,7 @@
 					<!--Section heading-->
 					<h1 class="main-title py-3">Circulars</h1>
 				</section>
+				@if(count($circulars) > 0)
 				<div class="row">
 					<div class="col-12">
 						<div class="list-group">
@@ -30,6 +29,13 @@
 						</div>
 					</div>
 				</div>
+				@else
+				<div class="row text-center">
+					<div class="col-12">
+						<h3>No Any Circulars Found</h3>
+					</div>
+				</div>
+				@endif
 			</div>
 		</main>
 		@include('./includes/footer')

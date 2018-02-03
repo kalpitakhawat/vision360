@@ -58,15 +58,15 @@
                                 <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
                                 <div class="row my-3 d-flex justify-content-center">
                                     <!--Facebook-->
-                                    <a type="button" class="btn-floating my-1 btn-fb waves-effect waves-light">
+                                    <a type="button" class="btn-floating my-1 btn-fb waves-effect waves-light" href="/auth/facebook">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                     <!--Linked In-->
-                                    <a type="button" class="btn-floating my-1 btn-li waves-effect waves-light">
+                                    <!-- <a type="button" class="btn-floating my-1 btn-li waves-effect waves-light" >
                                         <i class="fa fa-linkedin"></i>
-                                    </a>
+                                    </a> -->
                                     <!--Google +-->
-                                    <a type="button" class="btn-floating my-1 btn-gplus waves-effect waves-light">
+                                    <a type="button" class="btn-floating my-1 btn-gplus waves-effect waves-light" href="/auth/google">
                                         <i class="fa fa-google-plus"></i>
                                     </a>
                                 </div>

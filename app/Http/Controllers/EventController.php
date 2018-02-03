@@ -15,7 +15,7 @@ class EventController extends Controller
     public function detail(Request $r , $id)
     {	
     	$e = Event::find($id);
-    	if ($e && $e->type=='true') {
+    	if ($e && $e->type=='upcoming' && $e->isActive) {
     		return view('/eventDetails')->with('event' , $e);
     	} else {
     		return redirect('/events');

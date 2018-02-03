@@ -47,7 +47,7 @@
 									<div class=" mt-3 file-field">
 										<div class="btn btn-primary btn-sm">
 											<span>Choose file</span>
-											<input type="file" accept="image/jpg,image/jpeg,image/png" name="cover_image">
+											<input type="file" accept="image/jpg,image/jpeg,image/png" name="cover_image" required="">
 										</div>
 										<div class="file-path-wrapper">
 											<input class="file-path validate" type="text" placeholder="Upload Cover Image">
@@ -55,7 +55,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-md-6 mt-2">
-									<select class="mdb-select">
+									<select class="mdb-select" name="type">
 										<option value="upcoming" selected="">Upcoming</option>
 										<option value="recent">Recent</option>
 									</select>
@@ -66,7 +66,7 @@
 							<div class="row mt-3">
 								<div class="col-12 col-md-6">
 									<div class="md-form">
-										<input type="text" id="date" required="" name="date" class="form-control datepicker">
+										<input type="text" id="date" required="" name="date" class="form-control datepicker" required="">
 										<label for="date">Event Start Date</label>
 									</div>
 								</div>

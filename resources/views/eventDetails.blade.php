@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
 		@include('./includes/headers')
-		<link rel="stylesheet" href="/css/landing.min.css">
 	</head>
 	<body >
 		@include('./includes/navbar')
@@ -15,7 +13,7 @@
 						<div class="card card-cascade wider reverse my-4">
 							<!--Card image-->
 							<div class="view overlay hm-white-slight">
-								<img src="{{$event->cover_image}}" class="img-fluid">
+								<img src="/covers/{{$event->cover_image}}" class="img-fluid" style="width: 100%;">
 								<a href="#!">
 									<div class="mask"></div>
 								</a>

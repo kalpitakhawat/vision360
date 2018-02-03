@@ -38,4 +38,19 @@ class BlogController extends Controller
         $b->isActive = 'false';
         $b->update();
       }
+
+    public function ApiIndex(Request $r)
+    {
+      $q = $r->input('q');
+      $blogs = Blog::where(function ($query) use($q)
+      { 
+        $query->where('title','like','%'.$q.'%')->orWhere('short_desc','like','%'.$q.'%')->orWhere('categories','like','%'.$q.'%');
+      })->where('status' , 'active')->where('isActive' , 'true')->orderBy('created_at' , 'DESC')->get();
+      foreach ($blogs as $blog) {
+        $u = User::where('id',$blog->user_id)->first();
+        $blog->user_name = $u->f_name .' '. $u->l_name;
+        $blog->avtar = $u->avtar;
+      }
+      return response()->json($blogs);
+    }
 }

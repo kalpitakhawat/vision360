@@ -22,9 +22,11 @@ class EventController extends Controller
         $e->desc = $r->input('description');
         $e->cover_image = $cover_image;
         $e->type = $r->input('type');
-        $e->time = $r->input('date') . $r->input('time');
+        $e->time = $r->input('date') . ' ' .$r->input('time');
         $e->venue = $r->input('venue');
+        $e->isActive = 'true';
         $e->save();
+        return redirect('/admin/events');
     }
     public function index(Request $r)
     {

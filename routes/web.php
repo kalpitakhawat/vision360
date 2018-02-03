@@ -14,9 +14,7 @@
 //Routes For Guest And Member Only
 Route::group(['middleware' => ['IsNotAdmin']],function ()
 {
-    Route::get('/', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/', 'RootController@index')->name('home');
     Route::get('/events', "EventController@index")->name('events');
     Route::get('/events/{id}','EventController@detail')->name('eventDetail');
     Route::get('/circulars', 'CircularController@index')->name('circulars');
@@ -25,9 +23,13 @@ Route::group(['middleware' => ['IsNotAdmin']],function ()
         return view('blogs');
     })->name('blogs');
 });
-// Route::get('/home2', function () {
-//     return view('welcome');
-// });
+Route::get('/home2', function () {
+    return view('welcome');
+});
+Route::get('/about',function ()
+{
+    return view('about');
+})->name('about');
 //Ristricted For Login
 Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
 {
@@ -47,6 +49,7 @@ Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
             return view('members');
         })->name('members');
         Route::get('/members/{id}', 'MemberController@detail')->name('members.detail');
+        Route::post('/members/api', 'MemberController@api')->name('members.api');
 
         //After Basic Register
         Route::get('/register/second', 'Auth\RegisterController@secondForm')->name('register.second');
@@ -69,7 +72,8 @@ Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
 });
 
 Auth::routes();
-
+Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
 
 Route::group(['middleware' => ['auth','IsAdmin']],function ()
 {
