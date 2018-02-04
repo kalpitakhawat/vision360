@@ -11,12 +11,12 @@ class RootController extends Controller
 {
     public function index(Request $r)
     {
-    		$startdate= new Carbon(env('START_DATE'));
-    		$enddate = Carbon::now();
-    		$difference = $enddate->diff($startdate)->days;
-    		$u = User::where('status' , 'active')->where('type','user')->get();
-    		$offset = (($difference * 4) % $u->count());
-    		$user=User::where('status' , 'active')->where('type','user')->skip($offset)->take('4')->get();
+    		// $startdate= new Carbon(env('START_DATE'));
+    		// $enddate = Carbon::now();
+    		// $difference = $enddate->diff($startdate)->days;
+    		// $u = User::where('status' , 'active')->where('type','user')->get();
+    		// $offset = (($difference * 4) % $u->count());
+    		$user=User::where('status' , 'active')->where('type','user')->skip(0)->take(4)->get();
 
     		$circular = Circular::whereDate('created_at', '>=', Carbon::now()->subDays(3))->get();
 
