@@ -27,7 +27,7 @@ class RootController extends Controller
     			$blog->avtar = $bu->avtar;
     		}
     		
-    		$e = Event::where('isActive','true')->where('type' , 'upcoming')->orderBy('created_at','DESC')->first(); 
+    		$e = Event::where('isActive','true')->where('type' , 'upcoming')->orderBy('created_at','DESC')->get(); 
 
     		return view('home')->with('users', $user)->with('circulars' , $circular)->with('blogs' , $blogs)->with('event',$e);
     }
