@@ -58,7 +58,7 @@ Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallba
 Route::group(['middleware' => ['auth','IsAdmin']],function ()
 {
     Route::prefix('admin')->name('admin.')->group(function () {
-        Route::get('/', 'adminRootController@dashboard')->name('dashboard');
+        Route::get('/', 'Admin\adminRootController@dashboard')->name('dashboard');
 
         Route::prefix('events')->name('events.')->group(function () {
             Route::get('/', 'Admin\EventController@index')->name('show');
