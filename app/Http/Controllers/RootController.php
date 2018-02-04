@@ -31,4 +31,21 @@ class RootController extends Controller
 
     		return view('home')->with('users', $user)->with('circulars' , $circular)->with('blogs' , $blogs)->with('event',$e);
     }
+    public function about()
+    {
+        return view('about');
+    }
+    public function pending()
+    {
+            return view('pending');
+    }
+    public function reject()
+    {
+            return view('reject');
+        
+    }
+    public function block()
+    {
+        return view('block');
+    }
 }

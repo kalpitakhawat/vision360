@@ -9,6 +9,10 @@ use Uuid;
 use Auth;
 class BlogController extends Controller
 {
+    public function index()
+    {
+      return view('blogs');
+    }
    	public function create(Request $r)
    	{
    		$b = new Blog;
@@ -52,5 +56,9 @@ class BlogController extends Controller
         $blog->avtar = $u->avtar;
       }
       return response()->json($blogs);
+    }
+    public function write()
+    {
+      return view('addblog');
     }
 }

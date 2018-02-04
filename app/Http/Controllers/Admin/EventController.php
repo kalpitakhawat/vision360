@@ -33,4 +33,9 @@ class EventController extends Controller
     	$e = Event::all();
         return view("/admin/events")->with('events',$e);
     }
+     public function addEvent()
+    {
+        return view('/admin/addEvent');
+        
+    }
 }

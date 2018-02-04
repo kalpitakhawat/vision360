@@ -19,7 +19,7 @@ class EventController extends Controller
     		return view('/eventDetails')->with('event' , $e);
     	} else {
     		return redirect('/events');
-    	}
-    	
+    	}    	
     }
+   
 }

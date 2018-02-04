@@ -53,4 +53,8 @@ class adminRootController extends Controller
         $u->update();
         return redirect()->route('admin.users.show');
     }
+    public function dashboard()
+    {
+        return view('/admin/dashboard');
+    }
 }

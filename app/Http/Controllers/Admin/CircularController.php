@@ -20,4 +20,9 @@ class CircularController extends Controller
     	$c = Circular::all();
     	return view("/admin/circulars")->with('circulars',$c);
     }
+    public function addCircular()
+    {
+        return view('/admin/addCircular');
+        
+    }
 }

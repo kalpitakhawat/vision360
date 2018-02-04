@@ -31,4 +31,9 @@ class MemberController extends Controller
 		})->where('status' , 'active')->get();
 		return response()->json($u);
 	}
+	public function index()
+	{
+            return view('members');
+		
+	}
 }
