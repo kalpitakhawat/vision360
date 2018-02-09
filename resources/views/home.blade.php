@@ -6,6 +6,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link rel="stylesheet" href="/css/compiled.min.css">
         <link rel="stylesheet" href="/css/landing.min.css">
+
         <style>
         .intro-2 {
         /*background: url("/img/89.jpg")no-repeat center center;*/
@@ -103,10 +104,11 @@
                         <div class="d-flex align-items-center">
                             <div class="row flex-center pt-5 mt-3">
                                 <div class="col-md-6 wow fadeInLeft">
+
                                     <img src="/img/banner.png" class="img-fluid">
                                 </div>
                                 <div class="col-md-6 wow fadeInRight text-center">
-                                    <div class="col-12 px-0">
+                                    <div class="col-12 px-0" style="margin-left: -0.3em !important;">
                                         <img src="/img/g.png" class="img-fluid">
                                     </div>
                                     <div class="col-8 offset-2 mx-auto px-0" style="    border-radius: 8%;
@@ -303,6 +305,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="/js/bootstrap.min.js" charset="utf-8"></script>
 <script src="/js/mdb.min.js" charset="utf-8"></script>
+
+
 
                 
             <script>
