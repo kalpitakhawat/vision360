@@ -54,6 +54,7 @@ Route::group(['middleware' => ['auth','checkUserStatus','IsMember']],function ()
 Auth::routes();
 Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
+// Route::get('payment/paytm/callback', 'Payment\PaymentController@handlePaytmCallback');
 
 Route::group(['middleware' => ['auth','IsAdmin']],function ()
 {

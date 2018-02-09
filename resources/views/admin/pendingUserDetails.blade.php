@@ -96,6 +96,10 @@
 												<p><strong><i class="fa fa-building-o" aria-hidden="true"></i> Company Name And Address</strong><br>{{$user->company_name_address}}</p>
 												<hr>
 											</div>
+											<div class="col-12 col-md-6">
+												<p><strong><i class="fa fa-minus" aria-hidden="true"></i> Wallet Transaction Id</strong><br>{{$user->transaction_id}}</p>
+												<hr>
+											</div>
 										</div>
 									</div>
 								</div>

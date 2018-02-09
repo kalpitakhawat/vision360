@@ -78,7 +78,7 @@ class RegisterController extends Controller
     public function donate(Request $r)
     {   
         $user = User::find(Auth::id());
-        $user->transaction_id = '123456';
+        $user->transaction_id = $r->input('transaction_id');
         $user->status = 'applied';
         $user->update();
         return redirect('/register/pending');
