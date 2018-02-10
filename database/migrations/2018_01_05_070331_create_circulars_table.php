@@ -16,7 +16,7 @@ class CreateCircularsTable extends Migration
         Schema::create('circulars', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
