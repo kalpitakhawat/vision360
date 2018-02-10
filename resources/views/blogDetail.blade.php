@@ -3,6 +3,12 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		<style type="text/css">
+			p{
+				margin-bottom: none !important;
+				line-height: none !important;
+			}
+		</style>
 	</head>
 	<body>
 		<header>@include('./includes/navbar')</header>
