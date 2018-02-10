@@ -21,7 +21,7 @@
 					<div class="col-12">
 						<p><strong>{{$blog->short_desc}}</strong></p>
 						<br>
-						<p>{!! $blog->desc )!!} </p>
+						<p>{!! $blog->desc !!} </p>
 					</div>
 				</div>
 				<div class="row">
