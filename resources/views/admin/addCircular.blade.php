@@ -26,10 +26,11 @@
 								</div>
 							</div>
 							<div class="row">
+								<label for="textarea-description">Description</label>
 								<div class="col-12">
 									<div class="md-form">
 										<textarea type="text" id="textarea-description" name="description" class="md-textarea"></textarea>
-										<label for="textarea-description">Description</label>
+										
 									</div>
 								</div>
 							</div>
