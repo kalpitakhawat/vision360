@@ -3,6 +3,11 @@
 	<head>
 		<title></title>
 		@include('./includes/headers')
+		<style type="text/css">
+			p{
+				-webkit-margin-after: 0 !important;
+			}
+		</style>
 	</head>
 	<body>
 		<header>@include('./includes/navbar')</header>
