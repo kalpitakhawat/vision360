@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title></title>
-		@include('/includes/head')
+		@include('./includes/headers')
 	</head>
 	<body>
-		<header>@include('/includes/navbar')</header>
+		<header>@include('./includes/navbar')</header>
 		<main>
 			<div class="container mt-3">
 				<div class="row text-center">
