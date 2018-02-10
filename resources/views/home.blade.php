@@ -257,8 +257,8 @@
                                         <div class="list-group transparent">
                                             @foreach($circulars as $circular)
                                             <a href="/circulars/{{$circular->id}}" class="list-group-item list-group-item-action flex-column align-items-start">
-                                                <p class="mb-1">$circular->title</p>
-                                                <small class="text-muted">$circular->created_at</small>
+                                                <p class="mb-1">{{$circular->title}}</p>
+                                                <small class="text-muted">{{$circular->created_at}}</small>
                                             </a>
                                             @endforeach
                                         </div>

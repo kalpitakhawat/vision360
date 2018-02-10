@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title></title>
+		@include('./includes/head')
 	</head>
 	<body>
 		<header>@include('./includes/navbar')</header>

@@ -63,7 +63,7 @@ class RegisterController extends Controller
         $avtar = $r->file('avtar');
          if ($avtar != '' || !empty($avtar)) {
             $av_name = Uuid::uuid4()->toString().$avtar->getClientOriginalName();
-            $avtar->move(public_path().'/profiles/',$av_name );
+            $avtar->move('profiles',$av_name );
             $user->avtar = '/profiles/'.$av_name;
         }
         $user->status = 'donation';
