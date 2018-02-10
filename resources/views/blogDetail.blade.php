@@ -5,8 +5,8 @@
 		@include('./includes/headers')
 		<style type="text/css">
 			p{
-				margin-bottom: none !important;
-				line-height: none !important;
+				margin-bottom: 0 !important;
+				line-height: 0 !important;
 			}
 		</style>
 	</head>
