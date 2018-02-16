@@ -151,29 +151,29 @@
                                                         <strong>{{$users[0]->f_name}}&nbsp;{{$users[0]->l_name}}</strong>
                                                         </h4>
                                                         <h6 class="font-bold  mb-4">{{$users[0]->present_activity}}</h6>
-                                                        <p class="">{$users[0]->about}}</p>
+                                                        <p class="">{{$users[0]->about}}</p>
                                                         <!--Facebook-->
-                                                        <a class="icons-sm fb-ic">
+                                                        <a class="icons-sm fb-ic" href="/members/{{$users[0]->id}}">
                                                             <i class="fa fa-info"></i> View Details
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <!--Grid column-->
                                                 <!--Grid column-->
-                                                <div class="col-lg-6 col-md-12 mb-r">
+                                                 <div class="col-lg-6 col-md-12 mb-r">
                                                     <div class="col-md-6 float-left">
                                                         <div class="avatar">
-                                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded z-depth-1" alt="Second sample avatar image">
+                                                            <img src="{{$users[1]->avtar}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 float-right">
                                                         <h4>
-                                                        <strong>Maria Kate</strong>
+                                                        <strong>{{$users[1]->f_name}}&nbsp;{{$users[1]->l_name}}</strong>
                                                         </h4>
-                                                        <h6 class="font-bold  mb-4">Photographer</h6>
-                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                        <h6 class="font-bold  mb-4">{{$users[1]->present_activity}}</h6>
+                                                        <p class="">{{$users[1]->about}}</p>
                                                         <!--Facebook-->
-                                                        <a class="icons-sm fb-ic">
+                                                        <a class="icons-sm fb-ic" href="/members/{{$users[1]->id}}">
                                                             <i class="fa fa-info"></i> View Details
                                                         </a>
                                                     </div>
@@ -184,40 +184,40 @@
                                             <!--Grid row-->
                                             <div class="row center-on-small-only">
                                                 <!--Grid column-->
-                                                <div class="col-lg-6 col-md-12 mb-r">
+                                                 <div class="col-lg-6 col-md-12 mb-r">
                                                     <div class="col-md-6 float-left">
                                                         <div class="avatar">
-                                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" class="rounded z-depth-1" alt="Fourth sample avatar image">
+                                                            <img src="{{$users[2]->avtar}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 float-right">
                                                         <h4>
-                                                        <strong>Anna Deynah</strong>
+                                                        <strong>{{$users[2]->f_name}}&nbsp;{{$users[2]->l_name}}</strong>
                                                         </h4>
-                                                        <h6 class="font-bold  mb-4">Web Developer</h6>
-                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                        <h6 class="font-bold  mb-4">{{$users[2]->present_activity}}</h6>
+                                                        <p class="">{{$users[2]->about}}</p>
                                                         <!--Facebook-->
-                                                        <a class="icons-sm fb-ic">
+                                                        <a class="icons-sm fb-ic" href="/members/{{$users[2]->id}}">
                                                             <i class="fa fa-info"></i> View Details
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <!--Grid column-->
                                                 <!--Grid column-->
-                                                <div class="col-lg-6 col-md-12 mb-r">
+                                                 <div class="col-lg-6 col-md-12 mb-r">
                                                     <div class="col-md-6 float-left">
                                                         <div class="avatar">
-                                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(29).jpg" class="rounded z-depth-1" alt="Fifth sample avatar image">
+                                                            <img src="{{$users[3]->avtar}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 float-right">
                                                         <h4>
-                                                        <strong>Sarah Melyah</strong>
+                                                        <strong>{{$users[3]->f_name}}&nbsp;{{$users[3]->l_name}}</strong>
                                                         </h4>
-                                                        <h6 class="font-bold  mb-4">Front-end Developer</h6>
-                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
-                                                        <!--Google +-->
-                                                        <a class="icons-sm fb-ic">
+                                                        <h6 class="font-bold  mb-4">{{$users[3]->present_activity}}</h6>
+                                                        <p class="">{{$users[3]->about}}</p>
+                                                        <!--Facebook-->
+                                                        <a class="icons-sm fb-ic" href="/members/{{$users[3]->id}}">
                                                             <i class="fa fa-info"></i> View Details
                                                         </a>
                                                     </div>
