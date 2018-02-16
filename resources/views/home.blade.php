@@ -143,15 +143,15 @@
                                                 <div class="col-lg-6 col-md-12 mb-r">
                                                     <div class="col-md-6 float-left">
                                                         <div class="avatar">
-                                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded z-depth-1" alt="First sample avatar image">
+                                                            <img src="{{$users[0]->avtar}}">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 float-right">
                                                         <h4>
-                                                        <strong>John Doe</strong>
+                                                        <strong>{{$users[0]->f_name}}&nbsp;{{$users[0]->l_name}}</strong>
                                                         </h4>
-                                                        <h6 class="font-bold  mb-4">Web Designer</h6>
-                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
+                                                        <h6 class="font-bold  mb-4">{{$users[0]->present_activity}}</h6>
+                                                        <p class="">{$users[0]->about}}</p>
                                                         <!--Facebook-->
                                                         <a class="icons-sm fb-ic">
                                                             <i class="fa fa-info"></i> View Details
